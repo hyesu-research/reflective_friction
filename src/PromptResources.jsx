@@ -1,0 +1,5 @@
+import React from 'react';
+import {CopyText} from './SkillResources';
+export default function PromptResources({item:x}){
+ return <section className="prompt-section" aria-label="프롬프트 복사와 저장"><div className="prompt-heading"><h2>{x.promptHeading||(x.author?'프롬프트 원문':'한국어 적용문')}</h2></div><p className="prompt-credit">{x.promptCredit}</p><div className="skill-actions"><CopyText text={x.prompt} label="문구 복사"/>{x.promptFile&&<a href={x.promptFile} download={x.id+'.txt'}>텍스트 저장 ↓</a>}</div><blockquote>{x.prompt}</blockquote>{x.promptOriginal&&<details className="prompt-original"><summary>{x.promptOriginalLabel||'원문'} 전체 보기</summary><p className="prompt-credit">{x.promptOriginalCredit}{x.promptLicense&&<> <a href={x.promptLicense} target="_blank" rel="noreferrer">라이선스 ↗</a></>}</p><div className="skill-actions"><CopyText text={x.promptOriginal} label="원문 복사"/>{x.promptOriginalFile&&<a href={x.promptOriginalFile} download={x.id+'-original.txt'}>원문 저장 ↓</a>}</div><pre>{x.promptOriginal}</pre></details>}</section>;
+}

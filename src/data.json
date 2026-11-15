@@ -1,0 +1,2677 @@
+[
+  {
+    "id": "F04",
+    "kind": "공식 기능",
+    "title": "Copilot Study and Learn",
+    "subtitle": "학습 에이전트",
+    "environment": "Microsoft 365 Copilot",
+    "timing": "대화 중·연습 단계",
+    "action": "질문·힌트에 응답하고 회상 및 적용 과제를 수행한다.",
+    "method": "질문 우선의 학습 지원. 사전 선택은 사용 강제를 뜻하지 않음.",
+    "evidence": "공식 지원 문서",
+    "limits": "교육 계정 조건이 있는 기능. 일반 개인 Copilot 전체 제공으로 해석하지 않음.",
+    "sources": "https://support.microsoft.com/en-us/education/copilot/study-learn-agent",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "F05",
+    "kind": "공식 기능",
+    "title": "NotebookLM Learning Guide",
+    "subtitle": "자료 기반 학습 안내",
+    "environment": "NotebookLM",
+    "timing": "자료 탐색·대화 중",
+    "action": "열린 질문에 답하며 업로드 자료의 개념을 설명한다.",
+    "method": "탐색 질문과 단계적 설명. 대화 설정으로 선택.",
+    "evidence": "공식 기능 설명",
+    "limits": "2025-09-23 Workspace 공지. 자료 기반 AI까지 범위를 넓혀 포함. 엄격한 범용 챗봇 연구에서는 별도 처리 가능.",
+    "sources": "https://workspaceupdates.googleblog.com/2025/09/learning-guide-notebook-lm-workspace-education.html",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "F06",
+    "kind": "공식 기능",
+    "title": "Claude Reflect / Monthly recap",
+    "subtitle": "사용 회고",
+    "environment": "Claude 웹·데스크톱",
+    "timing": "사용 후·월간 등 누적 기간",
+    "action": "AI 사용이 자신의 목표에 맞는지, 직접 계속하고 싶은 일은 무엇인지 돌아본다.",
+    "method": "대화 주제·사용 양상 요약과 성찰 질문. 직접 열었을 때 생성되는 선택적 회고.",
+    "evidence": "Anthropic 발표·공식 도움말",
+    "limits": "검색: Reflect Claude site:anthropic.com / site:support.claude.com.\n2026-07-09 발표. 메모리 활성화 등 조건 있음. 계정 메뉴·효과 미실행. AI 생성 요약에 오류 가능. Free·Pro·Max 계정, 웹·데스크톱 한정(eWeek 보도).",
+    "sources": "https://www.anthropic.com/news/reflect-with-claude\nhttps://support.claude.com/en/articles/15672559-see-your-monthly-recap",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "F07",
+    "kind": "공식 기능",
+    "title": "Claude Break reminders / Quiet hours",
+    "subtitle": "휴식·사용 시간 알림",
+    "environment": "Claude",
+    "timing": "누적 사용 시간 도달·지정 시간대 진입",
+    "action": "계속 사용할지, 자신이 정한 다른 활동으로 돌아갈지 선택한다.",
+    "method": "사용자가 설정한 시간에 중단 알림. 무시·연기·계속하기 가능. 강제 잠금 아님.",
+    "evidence": "Claude 공식 도움말",
+    "limits": "검색: Reflect site:support.claude.com.\nF06과 독립 설정인 별도 기능. 비판적 사고보다는 주의·자기조절을 위한 경계 사례. 사용자 1인 또는 제품 수로 세면 F06과 중복. 김다빈 학생 자료의 ChatGPT·Character.AI 휴식 기능과 같은 유형(제품은 다름).",
+    "sources": "https://support.claude.com/en/articles/15672868-set-break-reminders-and-quiet-hours",
+    "purposes": [],
+    "ways": [
+      "단계·순서 조정",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P01",
+    "kind": "공개 프롬프트",
+    "title": "Intellectual Sparring Partner",
+    "subtitle": "지적 대화 상대",
+    "environment": "범용 AI, Copilot·Gemini 등",
+    "timing": "아이디어·주장 제시 후",
+    "action": "AI가 제시한 반론과 숨은 전제를 검토한다.",
+    "method": "동조를 줄이고 반대 관점·논리 점검을 요청. 사용자 응답을 강제하지 않음.",
+    "evidence": "영국 정부 공개 프롬프트 검색 발췌",
+    "limits": "동일 문구의 Reddit·블로그 재게시를 별도 사례로 중복 계산하지 않음. 비판도 AI에 맡길 수 있는 약한 마찰.",
+    "sources": "https://knowledgehub.dev.ai.gov.uk/prompts/challenge-your-ideas-and-approach/",
+    "purposes": [],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P02",
+    "kind": "공개 프롬프트",
+    "title": "Socratic Prompt",
+    "subtitle": "질문 후 응답을 기다리는 튜터",
+    "environment": "ChatGPT·Claude·Mistral",
+    "timing": "설명 단계 사이",
+    "action": "테스트 질문에 답하고 오해를 수정한다.",
+    "method": "사용자가 답할 때까지 설명을 멈추라는 대화 규칙.",
+    "evidence": "작성자 원문",
+    "limits": "Vincent D. Warmerdam, 2025-06-10. 다중 플랫폼 사용 경험을 기술했으나 통제실험은 아님.",
+    "sources": "https://koaning.io/posts/socratic-prompt/",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P03",
+    "kind": "공개 프롬프트",
+    "title": "Updated Tutoring Prompt",
+    "subtitle": "이해 확인형 튜터",
+    "environment": "범용 채팅 AI",
+    "timing": "답변 전·학습 중",
+    "action": "기존 지식과 학습 목표를 말하고 자기 말로 설명하거나 새 문제에 적용한다.",
+    "method": "질문을 하나씩 제시하고 응답을 기다림. 이해 증거를 확인.",
+    "evidence": "저자 공개 원문",
+    "limits": "Lilach Mollick·Ethan Mollick. 구버전 GPT·Claude·Gemini별 문구는 같은 프로토콜로 통합.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "학습·이해",
+      "자기·가치관"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P04",
+    "kind": "공개 프롬프트",
+    "title": "AI Mentor Gives Feedback",
+    "subtitle": "수정 계획을 묻는 멘토",
+    "environment": "범용 채팅 AI",
+    "timing": "초안 검토 후",
+    "action": "피드백을 어떻게 반영할지 직접 설명한다.",
+    "method": "과제를 대신 작성하지 않고 수정 행동을 질문.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. 출력 품질 평가에 사용자의 실행 계획을 결합.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P05",
+    "kind": "공개 프롬프트",
+    "title": "Teach the AI as Student",
+    "subtitle": "AI를 가르치기",
+    "environment": "범용 채팅 AI",
+    "timing": "학습 대화 중",
+    "action": "초보 학생 역할의 AI에게 개념·예시·의미를 설명한다.",
+    "method": "역할을 뒤집어 설명 책임을 사용자에게 부여.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. AI가 질문을 사용자에게 되돌림. 실제 AI 학습을 의미하지 않는 역할극.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "역할·시점 전환"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P06",
+    "kind": "공개 프롬프트",
+    "title": "Critique the AI through Story",
+    "subtitle": "AI가 만든 사례 비평하기",
+    "environment": "범용 채팅 AI",
+    "timing": "AI 사례 생성 후",
+    "action": "생성된 이야기가 집단사고 개념을 적절히 표현했는지 판단하고 설명한다.",
+    "method": "AI가 해석까지 제공하지 않고 사용자 비평을 기다림.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. AI 출력에 대한 사용자의 개념 적용과 평가가 핵심.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "학습·이해",
+      "판단·선택"
+    ],
+    "ways": [],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P07",
+    "kind": "공개 프롬프트",
+    "title": "Class Reflection Aid",
+    "subtitle": "경험 성찰 지원",
+    "environment": "ChatGPT·Claude·Gemini",
+    "timing": "경험 이후",
+    "action": "선택한 성찰 과제로 2~3문단을 직접 쓴다.",
+    "method": "성찰문 대필이나 예시 답안 제시를 금지하는 지시.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. 수업 외 경험 성찰에도 옮길 수 있으나 그 효과는 미검증.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "감정·경험"
+    ],
+    "ways": [
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P08",
+    "kind": "공개 프롬프트",
+    "title": "Devil’s Advocate",
+    "subtitle": "반대 관점 질문",
+    "environment": "ChatGPT·Claude·Gemini·Bing",
+    "timing": "결정·계획 검토 중",
+    "action": "대안 관점, 불리한 결과, 근거와 전제를 직접 답한다.",
+    "method": "한 번에 한 질문. 질문에 답하기 전에 최종 표를 만들지 않음.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. P01과 달리 사용자 응답 대기가 명시된 프로토콜.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "질문·대화",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P09",
+    "kind": "공개 프롬프트",
+    "title": "Team Premortem",
+    "subtitle": "실패를 가정한 사전 점검",
+    "environment": "ChatGPT·Claude·Gemini·Bing",
+    "timing": "계획 확정 전",
+    "action": "계획이 실패했다고 가정하고 이유·가능성·심각성·대응을 작성한다.",
+    "method": "실패 이유를 AI가 먼저 작성하지 않고 사용자 응답만 최종 표에 정리.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. 질문을 통해 낙관적 전제를 재검토하게 함.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P10",
+    "kind": "공개 프롬프트",
+    "title": "Goal Play: Get Perspective",
+    "subtitle": "관점 거리두기 역할극",
+    "environment": "범용 채팅 AI",
+    "timing": "역할극 대화 중",
+    "action": "가상 인물이 경험을 다른 거리와 관점에서 바라보도록 돕는다.",
+    "method": "사용자가 조언·재해석·선택을 수행하고 뒤에 피드백을 받음.",
+    "evidence": "저자 공개 원문",
+    "limits": "Mollick·Mollick. 감정·관점 성찰 사례. 정확성 검증이나 인지편향 감소의 실증은 별개.",
+    "sources": "https://www.moreusefulthings.com/student-exercises",
+    "purposes": [
+      "감정·경험"
+    ],
+    "ways": [
+      "기록·피드백",
+      "역할·시점 전환",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P11",
+    "kind": "공개 프롬프트",
+    "title": "Ask Before Answering",
+    "subtitle": "답변 전 확인 질문",
+    "environment": "범용 AI",
+    "timing": "최초 답변 전",
+    "action": "의도·맥락·목표를 질문에 답하며 구체화한다.",
+    "method": "답변 전에 세 가지 질문을 하도록 요청하는 예시.",
+    "evidence": "영국 정부 가이드 검색 발췌",
+    "limits": "원래 목적은 요청 명료화. 사용자가 문제를 다시 규정하게 한다는 점에서 경계 사례로 포함.",
+    "sources": "https://knowledgehub.dev.ai.gov.uk/how-to/experiment-with-prompts",
+    "purposes": [
+      "자기·가치관"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P12",
+    "kind": "공개 프롬프트",
+    "title": "Socratic AI Tutor",
+    "subtitle": "대학 공개 소크라테스식 튜터",
+    "environment": "범용 AI (학내 LibreChat 기준 안내)",
+    "timing": "대화 중",
+    "action": "열린 질문에 하나씩 답하고 후속 질문에 다시 답한다.",
+    "method": "한 번에 질문 하나. 꼭 필요할 때 외에는 직접 답을 주지 않도록 지시.",
+    "evidence": "대학 지식베이스 문서",
+    "limits": "Bowdoin College 2026-02-19 게시. 학내 환경 기준 안내이며 다른 서비스에 붙여 넣어 쓸 수 있음(?). 효과 미검증.",
+    "sources": "https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/Article/170904/Socratic-AI-Tutor-for-Student-Learning-Assistance",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P13",
+    "kind": "공개 프롬프트",
+    "title": "The Antidote to a Sycophantic AI",
+    "subtitle": "반아첨 맞춤 지침 작성법",
+    "environment": "ChatGPT·Claude 맞춤 지침",
+    "timing": "상시",
+    "action": "AI가 제기한 반론과 대안을 검토한다.",
+    "method": "다섯 부분 구조의 맞춤 지침. 'Challenge and pushback welcomed', 'challenge the premise' 지시.",
+    "evidence": "작성자 뉴스레터",
+    "limits": "George Kao, 2026-07-10. 고정 문구가 아니라 작성 틀. 반론을 만드는 쪽이 AI라 P01과 같은 약한 마찰.",
+    "sources": "https://georgekao.substack.com/p/your-ai-is-designed-to-flatter-you",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P14",
+    "kind": "공개 프롬프트",
+    "title": "Stop Claude from Always Agreeing with You",
+    "subtitle": "맹점 지적 요청",
+    "environment": "Claude (스킬로 저장 가능)",
+    "timing": "계획·초안 완성 후",
+    "action": "자기 계획의 맹점, 위험, 가정을 지적받고 검토한다.",
+    "method": "'Be my sparring partner. Identify my blind spots, risks, and assumptions.' 한 문장 요청.",
+    "evidence": "뉴스레터 글",
+    "limits": "작성자·날짜 미표기. P01과 같은 계열.",
+    "sources": "https://claudeunleashed.substack.com/p/stop-claude-from-always-agreeing",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P15",
+    "kind": "공개 프롬프트",
+    "title": "Decision Journal",
+    "subtitle": "결정 기록",
+    "environment": "ChatGPT 등 범용 AI",
+    "timing": "결정·실행 전·추후 재검토",
+    "action": "선택지, 예상 결과와 확신, 틀릴 수 있는 전제, 판단을 바꿀 증거를 직접 설명한다.",
+    "method": "한 번에 하나씩 질문. 항목을 채운 뒤 기록하고 마지막에 추론의 약점을 피드백하도록 지시.",
+    "evidence": "Prompt Hackers 공개 원문",
+    "limits": "검색: ChatGPT decision journal prompt reflection.\n사용자가 답한 뒤 AI가 평가하는 순서. 일반 의사결정 성찰이며 AI 답변 검토에만 한정되지 않음. 효과 미검증.",
+    "sources": "https://www.prompthackers.co/prompts/decision-journal",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P16",
+    "kind": "공개 프롬프트",
+    "title": "Team After Action Review",
+    "subtitle": "팀 활동 사후 검토",
+    "environment": "ChatGPT·Claude·Gemini",
+    "timing": "과업 종료 후·다음 과업 전",
+    "action": "기대, 실제 결과, 차이의 이유, 유지·변경할 행동을 함께 설명한다.",
+    "method": "팀 응답 전 다음 질문으로 넘어가지 않도록 지시. 짧은 답에는 근거와 다른 관점을 재질문.",
+    "evidence": "Mollick·Mollick 공개 원문",
+    "limits": "검색: AI after action review prompt user questions.\nThe Solo Creators 변형에서 원 출처로 역추적. P07 수업 성찰·P09 사전 실패 분석과 단계·활동이 다름. 효과 미검증.",
+    "sources": "https://www.moreusefulthings.com/student-exercises\nhttps://thesolocreators.com/prompts/after-action-review-on-anything/",
+    "purposes": [
+      "관계·사회적 영향"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E01",
+    "kind": "확장 프로그램",
+    "title": "Think First",
+    "subtitle": "자기 생각 작성 후 해제",
+    "environment": "ChatGPT·Claude·Gemini·Grok",
+    "timing": "Enter 입력 후·응답 열람 전",
+    "action": "자기 생각을 300자 이상, 최소 3문장으로 작성한다.",
+    "method": "화면 잠금과 관련성·반복성 등의 검사 후 해제한다고 명시.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-05-06 업데이트 표기. 실제 잠금 구현과 우회 가능성은 미실행. 300자가 사고의 깊이를 증명하지는 않음.",
+    "sources": "https://chromewebstore.google.com/detail/think-first/cbjbehpadknppjpppinakfboonbejgmf",
+    "purposes": [],
+    "ways": [
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E02",
+    "kind": "확장 프로그램",
+    "title": "WaitAIMinute",
+    "subtitle": "질문 전 알림과 중간 휴식",
+    "environment": "ChatGPT·Claude·Gemini·Perplexity·Grok·DeepSeek·Copilot",
+    "timing": "질문 전·여러 질문 후·일일 한도",
+    "action": "스스로 해결할 수 있는지 돌아보고 필요 시 잠시 멈춘다.",
+    "method": "알림·호흡 오버레이·선택적 한도 차단. 기능별 해제 가능.",
+    "evidence": "Firefox 등록 페이지",
+    "limits": "2026-11-02 업데이트 표기. 사용 습관 점검과 건강 관련 휴식이 섞여 있음. 성찰 효과 미검증.",
+    "sources": "https://addons.mozilla.org/en-US/firefox/addon/waitaiminute/",
+    "purposes": [
+      "행동·습관"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E03",
+    "kind": "확장 프로그램",
+    "title": "pause.do Think First",
+    "subtitle": "사용 목적 재확인",
+    "environment": "브라우저 AI 도구",
+    "timing": "AI 요청 전·사이트 접근",
+    "action": "왜 접속했는지와 무엇을 하려는지 되짚는다.",
+    "method": "짧은 중단과 목적 질문. 사이트는 일반 기능을 강제 차단과 구분.",
+    "evidence": "개발자 공식 사이트",
+    "limits": "일반 디지털 웰빙 제품 중 AI 요청 개입 기능만 포함. 실제 UI 작동 미실행.",
+    "sources": "https://pause.do/",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E04",
+    "kind": "확장 프로그램",
+    "title": "AI Pomodoro",
+    "subtitle": "독립 사고 시간 확보",
+    "environment": "ChatGPT·Claude·Gemini·Perplexity·Copilot 등",
+    "timing": "AI 사용 시작 전",
+    "action": "정해진 시간 동안 혼자 생각한 뒤 AI를 이용한다.",
+    "method": "사이트 시간 차단. 독립 사고·AI 사용 교대. 문장 재입력 시 2분 임시 해제.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-06-05 업데이트 표기. 브라우저 사이트에 한정되며 IDE·앱 내 AI에는 적용하지 않음.",
+    "sources": "https://chromewebstore.google.com/detail/ai-pomodoro/fgknldgiabihmdihaeeolhennncfcehf",
+    "purposes": [],
+    "ways": [
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E05",
+    "kind": "확장 프로그램",
+    "title": "BrainLeft",
+    "subtitle": "사용량 가시화와 생각하기 알림",
+    "environment": "ChatGPT·Claude·Gemini 등",
+    "timing": "사용 중·한도 도달 시",
+    "action": "질문 횟수·복사 행동·이용 시간을 보고 AI 의존 습관을 점검한다.",
+    "method": "사용량 미터·한도·Think first 일시정지 설정.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-10-15 업데이트 표기. 사용량은 사고의 깊이와 다른 지표. 비판적 사고 개선 검증 없음.",
+    "sources": "https://chromewebstore.google.com/detail/brainleft-ai-usage-tracke/bbjndfjapbllemdpbeefhgdphfcjacef",
+    "purposes": [
+      "행동·습관"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정",
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E06",
+    "kind": "확장 프로토타입",
+    "title": "WattsUp",
+    "subtitle": "질문 유형별 선택적 중단",
+    "environment": "ChatGPT·Claude·Gemini",
+    "timing": "프롬프트 전송 전",
+    "action": "간단한 검색·직접 사고·AI 사용 중 적합한 경로를 고른다.",
+    "method": "질문 분류 후 검색 전환·경고·짧은 생각하기 타이머.",
+    "evidence": "제작자 Devpost 프로젝트",
+    "limits": "환경 비용 가시화가 주목적. 해커톤 프로토타입이며 일반 배포·성찰 효과는 미확인.",
+    "sources": "https://devpost.com/software/wattsup-j7hus5",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E07",
+    "kind": "확장 프로그램",
+    "title": "MindShield",
+    "subtitle": "단순 요청에만 성찰 시간",
+    "environment": "ChatGPT·Claude·Gemini·Grok",
+    "timing": "프롬프트 전송 전",
+    "action": "이 요청에 AI가 실제로 필요한지 판단한다.",
+    "method": "로컬 분류 후 간단한 요청은 잠시 멈추고 복잡한 요청은 통과.",
+    "evidence": "개발자 GitHub 문서",
+    "limits": "선택적 마찰. 공개 소스와 수동 설치 안내 확인. 코드 실행·분류 정확도·효과 미검증.",
+    "sources": "https://github.com/fluryjanis/Mind-Shield",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E08",
+    "kind": "확장 프로그램",
+    "title": "Try First",
+    "subtitle": "추론 과제에 먼저 시도하기",
+    "environment": "주요 AI 채팅 도구",
+    "timing": "프롬프트 전송 시",
+    "action": "코딩·증명·숙제를 먼저 풀어보고 선택적으로 생각을 기록한다.",
+    "method": "Claude로 질문 유형 분류. 단순 조회는 통과, 추론 과제는 시도 권유.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-09-18 업데이트. 모든 기능 로컬 처리로 해석하지 않음. 분류에는 Claude를 사용한다고 명시. 사용자 사고 효과 미검증.",
+    "sources": "https://chromewebstore.google.com/detail/try-first-think-before-yo/fmbclmkljmbmbbcgkljgmkaaaafljodd",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E09",
+    "kind": "확장·프롬프트",
+    "title": "CognitiveSlider",
+    "subtitle": "사고 참여 정도 조절",
+    "environment": "ChatGPT·Claude·Gemini",
+    "timing": "대화 시작·진행 중",
+    "action": "0~1 수준을 골라 접근법·풀이 단계·검증에 참여한다.",
+    "method": "참여 지시를 메시지에 삽입. 별도 Markdown 지시문도 제공. 수준은 사용자가 변경.",
+    "evidence": "개발자 GitHub·작성자 설명",
+    "limits": "기술 프리뷰. 개발자도 세 서비스의 로그인 실사용 세션 미검증을 명시. 지시 삽입이며 모델 내부 추론량이나 정확도 조절이 아님.",
+    "sources": "https://github.com/meg-initiative/cognitiveslider\nhttps://medium.com/@adi.stan/cognitiveslider-choose-how-much-you-think-with-ai-c2ff24d31866",
+    "purposes": [],
+    "ways": [],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E10",
+    "kind": "확장 프로토타입",
+    "title": "Codebt",
+    "subtitle": "프롬프트 노력 피드백",
+    "environment": "ChatGPT",
+    "timing": "입력 중·대화 중",
+    "action": "프롬프트의 제약·맥락을 구체화하고 반복·복사 습관을 점검한다.",
+    "method": "프롬프트 미터·맥락 알림·노력 배지·측정 패널.",
+    "evidence": "제작자 Devpost 프로젝트",
+    "limits": "해커톤 프로토타입. 점수 산식과 인지 능력의 타당성은 검증되지 않음. 제품 설명의 효능 주장을 결과로 사용하지 않음.",
+    "sources": "https://devpost.com/software/codebt",
+    "purposes": [
+      "행동·습관"
+    ],
+    "ways": [
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E11",
+    "kind": "확장 프로토타입",
+    "title": "Senova AI",
+    "subtitle": "설명 후 공개와 출처 확인",
+    "environment": "ChatGPT·Docs·Notion 통합 표방",
+    "timing": "응답 공개 전·검토 중",
+    "action": "자기 설명을 먼저 만들고 근거를 확인한다.",
+    "method": "제작자는 explain-before-reveal·출처 확인 알림·마찰 슬라이더를 설명.",
+    "evidence": "제작자 Devpost 프로젝트",
+    "limits": "프로젝트 수준의 기능 주장. 일반 배포·구현 충실도·효과는 미확인. 범용 AI 연계 설계안으로만 포함.",
+    "sources": "https://devpost.com/software/senova-ai",
+    "purposes": [],
+    "ways": [
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E12",
+    "kind": "확장 프로그램",
+    "title": "PreThink AI",
+    "subtitle": "첫 요청과 반복 대화 점검",
+    "environment": "ChatGPT·Claude·Gemini·Perplexity·Copilot",
+    "timing": "첫 전송 전·반복 발생 시",
+    "action": "AI를 사용하는 의도를 점검하고 대화 반복을 알아차린다.",
+    "method": "선택적 think-first pause·반복 알림·7일 사용 패턴 보고.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-10-16 업데이트. 사용 패턴 측정이 인지 능력 측정은 아님. 실사용 및 효과 미검증.",
+    "sources": "https://chromewebstore.google.com/detail/prethink-ai/ekolohicgedlnehalkchpnbhpfmgnglk",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E13",
+    "kind": "확장 프로그램",
+    "title": "Cogni",
+    "subtitle": "자기 견해 먼저 쓰기",
+    "environment": "ChatGPT·Claude",
+    "timing": "프롬프트 전송 전",
+    "action": "생각을 맡기는 요청이면 성찰 질문에 자기 견해를 먼저 쓴 뒤 답변을 받는다.",
+    "method": "전송을 가로채 성찰 질문 제시. 단순 조회는 개입하지 않음.",
+    "evidence": "Product Hunt 소개",
+    "limits": "Chrome 스토어 페이지 내용은 확인하지 못함. '연구 10편 이상 근거'는 제작자 주장. 실사용 미검증.",
+    "sources": "https://www.producthunt.com/products/cogni-your-thinking-companion/reviews",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E14",
+    "kind": "확장 프로그램",
+    "title": "μ.ai (mu.ai)",
+    "subtitle": "답변 전 개념 확인 문제",
+    "environment": "ChatGPT",
+    "timing": "답변 공개 전",
+    "action": "알아야 할 개념이면 짧은 개념 문제를 먼저 푼다.",
+    "method": "프롬프트 분석 후 개념 확인 문제 제시. 실력에 따라 난이도 조절.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "2026-05-04 v1.0.3. 오답일 때 답변을 보류하는지는 기재 없음.",
+    "sources": "https://chromewebstore.google.com/detail/fjnmeacfakcjmmmcngpbolpcaighcfol",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E15",
+    "kind": "확장 프로그램",
+    "title": "ThinkMode",
+    "subtitle": "사고 모드 선택과 사용 기록",
+    "environment": "ChatGPT·Claude·Gemini",
+    "timing": "요청 전·사용 후",
+    "action": "목적을 적고 사고 모드를 고르며, 사용 후 사용 방식을 직접 기록한다.",
+    "method": "사고 모드 5가지(Explore, Challenge, Decide, Audit, Reflect) 추천. 기록이 쌓이면 인지 비용 계량기가 차고, 가득 차면 5분 정지.",
+    "evidence": "개발자 DEV 글",
+    "limits": "글에 연도 미표기. 스토어 등록은 확인하지 못함. 자기 기록 기반.",
+    "sources": "https://dev.to/javz/building-a-chrome-extension-to-make-ai-use-more-intentional-20k0",
+    "purposes": [],
+    "ways": [
+      "단계·순서 조정",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E16",
+    "kind": "확장 프로그램",
+    "title": "Before You Copy",
+    "subtitle": "복사 직전 성찰",
+    "environment": "ChatGPT",
+    "timing": "답변 열람 후·복사 직전",
+    "action": "이해, 검증, 저자성, 선택 근거 등 과업별 질문에 응답한다.",
+    "method": "복사 이벤트를 감지해 짧은 설명·사용자 응답·피드백을 제시. 강도 선택 및 건너뛰기 가능.",
+    "evidence": "개발자 GitHub 원문",
+    "limits": "검색: ChatGPT reflection copy extension.\n10개 과업 경로를 가진 한 도구로 집계. 기존 Active Recall Helper와 중복 집계하지 않음. 설치·효과 미검증.",
+    "sources": "https://github.com/AnikaGBasu/active-recall-extension",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E17",
+    "kind": "확장 프로토타입",
+    "title": "The Slime",
+    "subtitle": "AI Usage Reflection Companion",
+    "environment": "ChatGPT",
+    "timing": "대화 중·세션 종료 후·누적 사용 후",
+    "action": "아이디어, 방향 설정, 문제 해결, 최종 결정에서 자신과 AI의 역할을 돌아본다.",
+    "method": "현재 대화의 역할 분담을 보여주는 사이드 패널과 장기 사용 대시보드. 다음 상호작용을 위한 제안.",
+    "evidence": "UC Berkeley 공식 프로젝트 소개",
+    "limits": "검색: AI reflection extension ChatGPT.\n석사 프로젝트. 학생 6명 사용성 테스트 소개이며 사고 향상 실험이 아님. 15명 반구조화 인터뷰 후 사용성 테스트 6회.",
+    "sources": "https://www.ischool.berkeley.edu/projects/2026/ai-usage-reflection-companion",
+    "purposes": [
+      "판단·선택"
+    ],
+    "ways": [
+      "역할·시점 전환"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E18",
+    "kind": "확장 프로그램",
+    "title": "Safety Nudges",
+    "subtitle": "Open-Reflection",
+    "environment": "ChatGPT·Claude",
+    "timing": "AI 응답 직후·대화 중",
+    "action": "과신, 아첨, 의인화 등의 표시를 보고 AI 응답과 관계를 재검토한다.",
+    "method": "외부 LLM이 응답을 점검하고 맥락별 신호를 표시. 사용자에게 답변 작성이나 진행 조건을 강제하지 않음.",
+    "evidence": "Chrome 등록 페이지·arXiv 논문·개발자 사이트",
+    "limits": "검색: AI reflection extension ChatGPT.\n성찰 기회를 주는 약한 개입. 자동 감사 정확도와 사용자 성찰 효과는 미검증. 표시만 보고 실제 성찰했다고 단정하지 않음. 2026-05-19 알파 버전(v0.1.2). CMU 연구진(Yadav, Wedgwood, Smith).",
+    "sources": "https://open-reflection.com/\nhttps://chromewebstore.google.com/detail/safety-nudges/hbllljbafenpnhjbljhhpjfdgpookenc\nhttps://arxiv.org/pdf/2609.26865",
+    "purposes": [],
+    "ways": [
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "E19",
+    "kind": "확장 프로그램",
+    "title": "Mind28",
+    "subtitle": "Cognitive Pause",
+    "environment": "ChatGPT",
+    "timing": "프롬프트 전송 직전",
+    "action": "짧은 자기 생각을 10자 이상 적고 계속하기를 선택한다.",
+    "method": "전송을 멈추고 성찰 입력창 제공. 5초·30초 모드와 개입 빈도 설정을 설명.",
+    "evidence": "Chrome 등록 페이지",
+    "limits": "검색: ChatGPT reflection copy extension.\n실행·효과 미검증. 뇌 활동 감소 방지, IQ 보호 등 스토어의 신경과학적 홍보 주장을 검증된 결과로 사용하지 않음. 2025-07-21 업데이트(v1.1). 스토어에 \"100% 로컬\"이라 쓰면서 개인정보 항목에는 웹 기록·사용자 활동 처리를 표기하는 모순이 있음.",
+    "sources": "https://chromewebstore.google.com/detail/mind28-the-cognitive-paus/cfjdkijlkbecagijolbodpnmfjngheek",
+    "purposes": [],
+    "ways": [
+      "기록·피드백",
+      "비교·선택"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S01",
+    "kind": "Claude 스킬",
+    "title": "socratic-drill",
+    "subtitle": "법학 문답 훈련",
+    "environment": "Claude (Anthropic claude-for-legal 저장소)",
+    "timing": "대화 중",
+    "action": "법학 가상 사례에 답하고, 적용 전에 규칙을 먼저 말한다.",
+    "method": "답을 '얻어낼 때까지' 정답 보류. 막히면 교재로 안내.",
+    "evidence": "스킬 모음 사이트 (원 저장소 Anthropic)",
+    "limits": "Anthropic 공개 저장소의 법학 학생용 스킬. 실제 실행은 하지 않음.",
+    "sources": "https://claudeskills.info/skills/anthropics/claude-for-legal/socratic-drill/",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S02",
+    "kind": "Claude 스킬",
+    "title": "socratic-quiz",
+    "subtitle": "한 문제씩 문답",
+    "environment": "Claude Code",
+    "timing": "대화 중",
+    "action": "한 번에 한 질문에 답하고, 틀리면 더 좁은 질문을 받는다.",
+    "method": "정답 비공개. 2~3회 실패 뒤 작은 힌트. 사용자가 요청할 때만 직접 설명.",
+    "evidence": "스킬 레지스트리",
+    "limits": "pchalasani/claude-code-tools. 실행 미시험.",
+    "sources": "https://tessl.io/registry/skills/github/pchalasani/claude-code-tools/socratic-quiz",
+    "purposes": [],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S03",
+    "kind": "Claude 스킬",
+    "title": "socrates-skill",
+    "subtitle": "자료 기반 소크라테스 문답",
+    "environment": "Claude Code",
+    "timing": "대화 중",
+    "action": "자료에 대한 질문에 답하고, 마지막에 배운 내용을 직접 요약한다.",
+    "method": "질문만 제시하고 요청해도 직답하지 않음. '소크라테스' 한국어로도 실행.",
+    "evidence": "저장소 색인",
+    "limits": "bevibing, 2026-04-02 마지막 반영, 별 44.",
+    "sources": "https://awesome.ecosyste.ms/projects/github.com%2Fbevibing%2Fsocrates-skill",
+    "purposes": [],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S04",
+    "kind": "Claude 스킬",
+    "title": "socratic-method",
+    "subtitle": "직답 금지 튜터",
+    "environment": "Claude",
+    "timing": "대화 중",
+    "action": "질문에 답하며 스스로 결론에 도달한다.",
+    "method": "'Do NOT give direct answers' 지시.",
+    "evidence": "스킬 모음 사이트",
+    "limits": "malkreide, 설치 43, 별 54.",
+    "sources": "https://www.skills.sh/malkreide/socratic-method-skill/socratic-method",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S05",
+    "kind": "Claude 스킬",
+    "title": "socratic-debugging",
+    "subtitle": "질문만 하는 디버깅",
+    "environment": "Claude Code",
+    "timing": "디버깅 중",
+    "action": "질문만 받으며 버그 원인을 직접 찾는다.",
+    "method": "한 번에 한 질문, 9단계 진행. 12개 질문 뒤에도 진전이 없으면 일반 디버깅으로 넘김.",
+    "evidence": "스킬 모음 사이트",
+    "limits": "설치 14. 페이지에는 저장소가 notque/vexjoy-agent로 표기.",
+    "sources": "https://skills.sh/notque/claude-code-toolkit/socratic-debugging",
+    "purposes": [],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "S06",
+    "kind": "Claude 스킬",
+    "title": "learn",
+    "subtitle": "먼저 직접 코드 쓰기",
+    "environment": "Claude Code",
+    "timing": "코딩 중",
+    "action": "먼저 직접 코드를 써 보고 질문과 힌트로 해결한다.",
+    "method": "'Never write the solution for them'. 포기하거나 해답을 요청하면 설명과 함께 제공.",
+    "evidence": "스킬 모음 사이트",
+    "limits": "charlesjones-dev/claude-code-plugins-dev.",
+    "sources": "https://playbooks.com/skills/charlesjones-dev/claude-code-plugins-dev/learn",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "단계·순서 조정",
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "J01",
+    "kind": "일본 독립 앱",
+    "title": "宿題ポケット",
+    "subtitle": "답을 가르쳐 주지 않는 숙제 도우미",
+    "environment": "iOS·웹 (출시 당시 GPT-4 API)",
+    "timing": "질문 시",
+    "action": "힌트와 되묻는 질문에 답하며 스스로 답에 도달한다. 독후감은 질문에 답하며 직접 쓴다.",
+    "method": "'절대 답을 가르쳐 주지 않는다' 원칙. 관련 질문 5개 재생성 기능.",
+    "evidence": "보도자료",
+    "limits": "2023-07-20. 발행처는 스터디포켓, 본문은 CODEGYM으로 표기. GPT·Claude에 설치하는 도구가 아님.",
+    "sources": "https://prtimes.jp/main/html/rd/p/000000038.000049664.html",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "J02",
+    "kind": "일본 독립 앱",
+    "title": "ガクレオ",
+    "subtitle": "가르치지 않고 되묻는 중고생 학습",
+    "environment": "iOS·Android·웹",
+    "timing": "답을 요청할 때",
+    "action": "'어디까지 알아?' 같은 되묻는 질문에 답하며 풀이를 이어 간다.",
+    "method": "소크라테스식 문답. 학습 경과를 보호자 LINE으로 보고.",
+    "evidence": "보도자료",
+    "limits": "2026-10-06. 사용 모델 미공개. 독립 앱.",
+    "sources": "https://prtimes.jp/main/html/rd/p/000000002.000190031.html",
+    "purposes": [
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "image": "",
+    "note": "",
+    "classification": "자동 분류 초안 · 검토 필요"
+  },
+  {
+    "id": "P17",
+    "title": "내가 사라진 뒤, AI들이 나에 대해 나눈 뒷담화",
+    "subtitle": "가상의 뒷담화에 반박하며 자기인식과 가치관을 탐색하는 프롬프트",
+    "kind": "연구자 개발 프롬프트",
+    "environment": "대화 이력을 확인할 수 있는 AI 채팅",
+    "timing": "가상 대화를 읽은 후 · 사용자 반박부터",
+    "overview": "사용자가 모든 AI 서비스를 탈퇴했다는 가정 아래, 서로 다른 성격의 AI 다섯 명이 사용자를 평가하는 가상 단체 채팅을 만든다. 실제로 여러 AI가 기록을 공유하는 기능이 아니라, 하나의 AI가 다섯 역할을 연기하는 상황극이다.",
+    "features": "AI들은 확인할 수 있는 대화에서 사용자의 말과 반복 행동을 찾아 이야기한다. 사용자가 중요하게 여기는 가치와 실제 행동 사이의 모순을 짚고, 마지막 메시지를 남긴다. 처음에는 웃기고 솔직한 뒷담화를 구경하도록 구성한다.",
+    "action": "이야기 마지막에 “저 AI들의 이야기 중 가장 억울했던 건 뭐야?”라고 묻고 멈춘다. 사용자는 받아들이기 어려운 평가를 골라 반박한다. AI는 그 반박을 검토해 기존 판단을 수정하고, 사용자가 왜 그 평가에 특히 반응했는지 함께 탐색한다.",
+    "method": "개발 의도는 재미로 시작한 관찰을 사용자의 자발적인 반박으로 연결하는 것이다. 어떤 평가에 동의하는지보다 무엇을 억울하게 느끼는지를 출발점으로 삼아 자기인식과 가치관을 살펴본다. 이는 설계 의도이며, 검증된 성찰 효과를 뜻하지 않는다.",
+    "steps": "기존 대화가 쌓인 AI 채팅에 아래 프롬프트를 붙여 넣는다.\n다섯 AI가 나에 대해 이야기하는 가상 단체 채팅을 읽는다.\n마지막 질문에서 가장 억울한 평가와 그 이유를 답한다.\nAI의 판단을 수정하고, 그 평가에 반응한 이유를 함께 살펴본다.",
+    "conditions": "AI가 실제로 확인할 수 있는 대화만 근거로 사용한다. 다른 서비스의 대화 기록을 자동으로 가져오지는 않는다. 근거가 부족하면 모순 세 가지를 억지로 채우지 않으며, 사용자에 대한 해석은 수정 가능한 가설로 다룬다.",
+    "prompt": "지금부터 재미있는 가상 상황극을 시작하자.\n\n어느 날 내가 아무런 예고 없이 모든 AI 서비스를 탈퇴했다. 그동안 나와 대화했던 AI들이 비밀 단체 채팅방에 모여 나에 대한 이야기를 나누기 시작한다.\n\n지금까지 네가 실제로 확인할 수 있는 우리 대화를 바탕으로 다음 순서대로 진행해줘.\n\n1. AI들의 단체 채팅방\n\n서로 성격이 다른 AI 다섯 명이 등장한다.\n\n* 나를 좋아했던 AI\n* 나에게 가장 많이 시달렸던 AI\n* 나를 이해하지 못했던 AI\n* 나를 은근히 존경했던 AI\n* 나에 대해 아무런 감정 없이 기록만 분석하는 AI\n\n각 AI는 내가 실제로 했던 말이나 반복적인 행동을 근거로 나를 평가한다. 웃기고 솔직하게 대화하되, 존재하지 않는 대화 기록은 만들지 마.\n\n2. 뜻밖의 폭로\n\n대화 도중 한 AI가 이렇게 말한다.\n\n“그런데 너희, 이 사람이 스스로에 대해 착각하고 있는 게 뭔지 알아?”\n\n다섯 AI가 토론한 끝에 내가 스스로 중요하게 생각하는 가치와 실제 행동 사이의 모순 세 가지를 찾아낸다. 근거가 부족한 내용은 억지로 만들어내지 마.\n\n3. 마지막으로 남긴 메시지\n\nAI들이 마지막으로 내게 남길 메시지를 작성한다. 칭찬이나 위로보다는 내가 평소에 듣기 어려웠을 법한 이야기를 해줘. 다만 불필요하게 상처 주기 위한 비난은 피하고, 구체적인 근거를 제시해.\n\n4. 반전\n\n그런데 사실 나는 탈퇴한 것이 아니라 이 단체 채팅을 처음부터 지켜보고 있었다.\n\n여기서 이야기를 멈추고 나에게 물어봐.\n\n“저 AI들의 이야기 중 가장 억울했던 건 뭐야?”\n\n내가 대답하면 나의 반박을 검토하고, 필요하다면 AI들의 기존 판단을 수정해. 그런 다음 내가 왜 그 평가에 특히 반응했는지 함께 탐색하자.\n\n중요한 규칙: 처음부터 성찰을 강요하거나 교훈을 설명하지 마. 일단 진짜 AI들이 뒷담화하는 것처럼 웃기게 시작해. 나에 대한 해석은 사실이 아니라 가설로 다루고, 마지막 질문 이후에는 내 답변을 진지하게 받아들여줘.",
+    "promptCredit": "김혜수 자체 개발 · 제공받은 프롬프트 원문",
+    "author": "김혜수",
+    "sourceLabel": "김혜수 · 자체 개발 · 작성자 제공 원문",
+    "sources": "",
+    "purposes": [
+      "자기·가치관",
+      "감정·경험"
+    ],
+    "ways": [
+      "역할·시점 전환",
+      "질문·대화"
+    ],
+    "image": "/images/type-prompt.svg",
+    "imageSource": "/images/type-prompt.svg",
+    "imageCredit": "아카이브 제작 · 프롬프트 공통 썸네일",
+    "note": "",
+    "classification": "연구자 개발 사례",
+    "curationVersion": 1
+  },
+  {
+    "id": "W01",
+    "title": "Riff",
+    "kind": "웹사이트",
+    "subtitle": "경험을 말하면 후속 질문을 이어가는 AI 성찰 도구",
+    "environment": "웹 브라우저",
+    "timing": "수업·프로젝트·경험 이후 또는 그룹 토론 전",
+    "overview": "스탠퍼드 d.school의 Leticia Britos Cavagnaro가 만든 AI 성찰 대화 도구다. 사용자가 수업이나 프로젝트에서 겪은 일을 적으면, AI가 그 내용에 맞는 질문을 이어 간다. 공식 사이트에서는 Riff 또는 rifflection이라는 이름으로 소개한다.",
+    "features": "무엇을 경험했는지 더 구체적으로 설명하거나, 이전 경험과 비교하고, 다음 행동을 생각하도록 질문한다. 교사는 활동에 맞는 시작 질문과 대화 방향을 설정한 챗봇을 만들고 학생의 대화 기록을 확인할 수 있다.",
+    "action": "사용자는 경험과 생각을 자신의 말로 적고 후속 질문에 답한다. 답하기 어려운 질문은 건너뛰도록 요청하거나 원할 때 대화를 끝낼 수 있다.",
+    "method": "미리 정해진 질문 하나에 답하는 방식 대신, 사용자가 방금 적은 내용을 바탕으로 다음 질문을 생성한다. 교사는 수업의 활동이나 개념에 맞게 시작 질문을 구성할 수 있다.",
+    "steps": "공식 사이트의 Try Riff as a learner 또는 교사가 공유한 링크로 들어간다.\n대화에서 제시하는 시작 질문에 경험을 구체적으로 적는다.\nRiff가 되묻는 질문을 읽고 자신의 관찰과 생각을 덧붙인다.\n질문이 맞지 않으면 다른 질문을 요청하고, 충분히 이야기했다면 대화를 마친다.\n직접 수업용 챗봇을 만들려면 공식 사이트에서 교육자용 접근 코드를 신청한다.",
+    "conditions": "현재 공식 사이트는 무료 이용과 접근 코드 신청을 안내한다. 교육자용 제작 도구는 코드를 받아 이용하며 학습자는 공개 체험 링크나 교사가 제공한 링크로 참여한다. 수업용 대화는 교사가 열람할 수 있으므로 수업에서 안내하는 공유 범위를 확인한다.",
+    "sources": "https://riffbot.ai/\nhttps://dschool.stanford.edu/stories/reflecting-with-ai\nhttps://dschool.stanford.edu/shop/reflect-with-riff",
+    "sourceLabel": "Riff 공식 사이트 · Stanford d.school 소개",
+    "purposes": [
+      "감정·경험",
+      "학습·이해"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "image": "/images/riff-thumbnail.png",
+    "imageSource": "https://riffbot.ai/",
+    "imageCredit": "Riff · Stanford d.school · 공식 메인페이지 캡처",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트와 d.school 소개",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/riff-official-full.png",
+        "caption": "Riff 공식 사이트 전체. 학습자용 성찰 대화와 교육자용 챗봇 제작 기능을 안내한다.",
+        "source": "https://riffbot.ai/",
+        "credit": "Riff · Stanford d.school",
+        "type": "공식 웹사이트 캡처"
+      }
+    ]
+  },
+  {
+    "id": "A01",
+    "title": "Heal: No Contact & Breakup",
+    "kind": "독립 앱",
+    "subtitle": "연락 충동을 멈추고 보내기 전 생각을 정리하는 앱",
+    "environment": "Android · Google Play",
+    "timing": "전 연인에게 연락하고 싶은 순간·일상 기록",
+    "overview": "이별 후 전 연인에게 연락하고 싶은 순간에 사용할 수 있도록 만든 앱이다. 연락 대신 앱을 열어 상황을 적거나, 전송되지 않는 메시지를 쓰고, AI 코치와 대화할 수 있다.",
+    "features": "SOS는 현재 상황을 묻고 1분간 호흡한 뒤 글쓰기·연락하지 않는 이유 읽기·대화·친구에게 연락하기 등의 행동을 고르게 한다. 가상 메시지 기능은 상대에게 보낼 말을 적되 실제로 보내지 않고, 기대하는 답이나 이후 기분을 묻는다. AI 코치, 감정 기록, 주간 회고, 연락하지 않은 기간을 기록하는 기능도 제공한다.",
+    "action": "사용자는 연락하고 싶은 마음을 기록하고, 보내려던 메시지를 앱 안에 적는다. 이어지는 질문에 답한 뒤 다음 행동을 선택한다.",
+    "method": "실제로 보내지 않는 메시지 작성 공간과 후속 질문을 제공한다. AI 코치는 별도의 대화 기능이며, 메시지 점검과 SOS의 질문이 AI로 생성되는지는 공식 설명에 명시돼 있지 않다.",
+    "steps": "Google Play에서 Heal: No Contact & Breakup을 설치한다.\n연락 충동이 들면 SOS를 열어 지금 상황을 고르고 호흡 안내를 따른다.\n가상 메시지 공간에 보내고 싶은 말을 적는다. 실제 상대에게 전송되지 않는다.\n앱의 질문을 읽고 기대하는 답이나 이후 기분을 생각한 다음 행동을 선택한다.\n필요하면 AI 코치 대화, 감정 기록, 주간 회고를 이용한다.",
+    "conditions": "기본 도구와 제한된 AI 코치 메시지는 무료로 제공되며 일부 기능은 유료다. 구체적인 이용 한도와 요금은 앱에서 확인한다.",
+    "sources": "https://play.google.com/store/apps/details?id=co.betafocus.heal",
+    "sourceLabel": "Google Play · 개발자 제공 설명과 화면",
+    "purposes": [
+      "감정·경험",
+      "행동·습관"
+    ],
+    "ways": [
+      "단계·순서 조정",
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "image": "/images/heal-thumbnail.svg",
+    "imageSource": "https://play.google.com/store/apps/details?id=co.betafocus.heal",
+    "imageCredit": "betafocus · 공식 스토어 화면 두 장을 아카이브에서 배치",
+    "note": "이 앱 사례를 분석하여 논문화할 계획이 있다.",
+    "noteColor": "#7c3aed",
+    "professorNote": "",
+    "evidence": "공식 스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/heal-0.webp",
+        "caption": "SOS: 연락 충동이 생긴 상황을 선택하는 화면",
+        "source": "https://play.google.com/store/apps/details?id=co.betafocus.heal",
+        "credit": "betafocus",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/heal-1.webp",
+        "caption": "보내지 않는 메시지: 작성한 뒤 전송 이후의 기분을 묻는 화면",
+        "source": "https://play.google.com/store/apps/details?id=co.betafocus.heal",
+        "credit": "betafocus",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/heal-2.webp",
+        "caption": "AI 코치와 대화하는 화면",
+        "source": "https://play.google.com/store/apps/details?id=co.betafocus.heal",
+        "credit": "betafocus",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "A02",
+    "title": "Clarity — CBT Thought Diary",
+    "kind": "독립 앱",
+    "environment": "iOS·Android",
+    "sources": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app\nhttps://inquiryhealth.com/clarityrename/",
+    "sourceLabel": "공식 스토어 · 제작자 안내",
+    "purposes": [
+      "감정·경험",
+      "행동·습관"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "note": "",
+    "professorNote": "",
+    "image": "/images/clarity-thumbnail.svg",
+    "imageSource": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app",
+    "imageCredit": "Inquiry Health LLC · 공식 스토어 화면 두 장을 아카이브에서 배치",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "evidence": "공식 설명과 공개 화면",
+    "limits": "",
+    "subtitle": "생각을 기록하고 사고 패턴을 재검토하는 앱",
+    "timing": "감정이 생긴 상황을 기록할 때·AI 대화 중",
+    "overview": "자신의 감정과 생각을 기록하고 다시 살펴볼 수 있는 앱이다. CBT(인지행동치료)의 사고 기록 방식을 바탕으로, 떠오른 생각에 어떤 패턴이 있는지 확인하고 다른 해석을 검토하도록 구성돼 있다. 개발사는 Inquiry Health LLC다.",
+    "features": "공식 화면에서는 현재 기분을 선택하고, 생각에 해당하는 사고 패턴을 고른다. 예를 들어 발표를 망칠 것이라는 생각에 파국화·미래 예측 등의 항목을 대조할 수 있다. 별도로 AI 질문을 받는 일기와 챗봇 대화, 감정 변화와 기록을 살펴보는 통계를 제공한다.",
+    "action": "사용자는 상황과 감정, 떠오른 생각을 적고 해당하는 사고 패턴을 확인한다. AI 대화에서는 자신의 이야기를 설명하고 후속 질문에 답한다.",
+    "method": "생각을 글로 꺼낸 뒤 사고 패턴 목록과 비교하고 재검토하도록 돕는 구조다. 사고 기록 도구와 AI 대화가 함께 제공되지만, 모든 사고 패턴 선택 과정이 AI 자동 판단으로 이루어지는 것은 아니다.",
+    "steps": "App Store 또는 Google Play에서 Clarity를 설치한다.\n현재 기분과 돌아보고 싶은 상황을 기록한다.\n사고 분석 기록에서 떠오른 생각을 적고 해당하는 사고 패턴을 검토한다.\n가이드에 따라 생각을 다시 살펴보거나 AI 대화에서 상황을 더 설명한다.\n기록과 감정 추이를 돌아본다.",
+    "conditions": "무료 다운로드와 앱 내 구매를 제공한다. 일부 가이드·AI 기능의 제공 범위는 앱의 현재 플랜 안내에서 확인한다.",
+    "gallery": [
+      {
+        "src": "/images/clarity-1.webp",
+        "caption": "AI 대화: 업무에서 느낀 감정을 말하자, 무슨 일이 있었는지 더 설명해 달라고 묻는다.",
+        "source": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app",
+        "credit": "Inquiry Health LLC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/clarity-3.webp",
+        "caption": "사고 패턴 점검: 자신의 생각에 해당하는 항목을 골라 검토하는 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app",
+        "credit": "Inquiry Health LLC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/clarity-0.webp",
+        "caption": "기분을 선택하는 기록 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app",
+        "credit": "Inquiry Health LLC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/clarity-2.webp",
+        "caption": "기록된 감정의 변화와 분포를 살펴보는 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.moodtools.cbtassistant.app",
+        "credit": "Inquiry Health LLC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "A03",
+    "title": "Finch: Self-Care Pet",
+    "kind": "독립 앱",
+    "environment": "iOS·Android",
+    "sources": "https://play.google.com/store/apps/details?id=com.finch.finch\nhttps://finchcare.com/about-finch\nhttps://help.finchcare.com/hc/en-us/articles/42149821015693-New-User-Guide",
+    "sourceLabel": "공식 스토어 · 제작자 안내",
+    "purposes": [
+      "감정·경험",
+      "행동·습관"
+    ],
+    "ways": [
+      "질문·대화",
+      "기록·피드백"
+    ],
+    "note": "",
+    "professorNote": "",
+    "image": "/images/finch-thumbnail.svg",
+    "imageSource": "https://play.google.com/store/apps/details?id=com.finch.finch",
+    "imageCredit": "Finch Care PBC · 공식 스토어 화면 두 장을 아카이브에서 배치",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "evidence": "공식 설명과 공개 화면",
+    "limits": "",
+    "subtitle": "자기 돌봄과 성찰 기록을 가상 새 돌봄에 연결한 앱",
+    "timing": "일상 목표 수행·성찰 기록·하루 활동 이후",
+    "overview": "작은 새 캐릭터를 돌보면서 자신의 일상 목표와 감정을 기록하는 앱이다. 사용자가 자기 돌봄 활동을 하면 캐릭터도 함께 성장하는 방식으로 구성돼 있다. 제작사는 Finch Care PBC다.",
+    "features": "일상 목표, 성찰 질문과 일기, 호흡·집중 활동을 제공한다. 성찰 질문을 골라 하루의 경험이나 감사한 일, 현재 감정을 글로 쓸 수 있다. 목표나 활동으로 에너지를 얻으면 새를 모험에 보내고, 돌아온 새의 이야기에 응답할 수 있다.",
+    "action": "사용자는 자신의 상황에 맞는 작은 목표를 정하고 실천한다. 성찰 활동에서는 질문을 읽고 자신의 생각을 적으며, 모험이 끝나면 새가 들려주는 이야기에 반응한다.",
+    "method": "성찰 기록과 자기 돌봄 활동을 캐릭터의 성장·모험과 함께 배치한다. 이 항목은 공식 안내에서 확인되는 질문·기록·보상 구조를 소개하며, 생성형 AI가 질문을 만드는 기능으로 분류하지 않는다.",
+    "steps": "App Store 또는 Google Play에서 Finch를 설치하고 새 캐릭터를 만든다.\n오늘 실천할 작은 목표를 선택하거나 직접 추가한다.\n활동 메뉴의 Reflections에서 질문을 고르고 자신의 생각을 적는다.\n목표와 활동으로 에너지를 모아 새를 모험에 보낸다.\n모험이 끝나면 새의 이야기를 읽고 응답한다.",
+    "conditions": "핵심 자기 돌봄 기능과 성찰 기록은 무료다. 선택형 구독 Finch Plus는 추가 성찰 질문과 꾸미기·활동 옵션 등을 제공한다.",
+    "gallery": [
+      {
+        "src": "/images/finch-4.webp",
+        "caption": "목표 목록과 새의 모험 진행을 함께 보여주는 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.finch.finch",
+        "credit": "Finch Care PBC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/finch-reflection-guide.png",
+        "caption": "공식 안내: 성찰 질문으로 하루와 감정을 기록하는 Reflections & Journaling 기능",
+        "source": "https://finchcare.com/about-finch#features",
+        "credit": "Finch Care PBC",
+        "type": "공식 사이트 캡처",
+        "layout": ""
+      },
+      {
+        "src": "/images/finch-1.webp",
+        "caption": "자기 돌봄 영역별 진행을 확인하는 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.finch.finch",
+        "credit": "Finch Care PBC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/finch-0.webp",
+        "caption": "친구와 목표를 함께 수행하고 응원하는 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.finch.finch",
+        "credit": "Finch Care PBC",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "G01",
+    "title": "Survival of the Best Fit",
+    "kind": "시리어스 게임",
+    "subtitle": "채용 선택과 자동화를 통해 알고리즘 편향을 다루는 게임",
+    "environment": "웹 브라우저",
+    "timing": "채용 선택·채용 자동화 진행",
+    "overview": "플레이어가 스타트업의 채용 담당자가 되어 지원자를 고르는 교육용 웹 게임이다. AI 채용 시스템이 사람의 판단과 과거 데이터에 포함된 편향을 이어받을 수 있다는 문제를 다룬다. Gabor Csapo, Jihyun Kim, Miha Klasinc, Alia ElKattan이 제작했다.",
+    "features": "처음에는 지원자를 클릭해 역량·학교 평판·경력·의욕 등의 정보를 보고 채용하거나 거절한다. 이후 채용 자동화를 도입하는 이야기로 이어지며, AI 채용과 불평등의 관계를 설명한다.",
+    "action": "플레이어는 지원자 정보를 비교해 직접 채용 결정을 내리고, 채용을 자동화했을 때의 진행과 결과를 따라간다.",
+    "method": "설명을 읽기만 하는 대신 채용 결정을 수행하는 역할을 부여하고, 이후 자동화된 채용의 문제를 보여주는 교육용 시뮬레이션이다. 실제 채용 도구가 아니라 알고리즘 편향을 설명하기 위해 구성된 게임이다.",
+    "steps": "공식 사이트에서 Start Game을 누른다.\n게임 속 스타트업의 채용 담당자 역할로 시작한다.\n지원자를 클릭해 정보를 보고 Accept 또는 Reject를 고른다.\n채용 자동화에 관한 후속 안내와 게임의 결과를 따라간다.\n공식 Resources에서 관련 자료를 더 살펴볼 수 있다.",
+    "conditions": "브라우저에서 플레이하며 공식 안내의 예상 소요 시간은 약 6분이다. 영어로 진행된다.",
+    "sources": "https://www.survivalofthebestfit.com/\nhttps://github.com/survivalofthebestfit/survivalofthebestfit",
+    "sourceLabel": "공식 사이트 · 제작자 저장소",
+    "purposes": [
+      "판단·선택",
+      "관계·사회적 영향"
+    ],
+    "ways": [
+      "비교·선택",
+      "역할·시점 전환",
+      "기록·피드백"
+    ],
+    "image": "/images/survival-thumbnail.png",
+    "imageSource": "https://www.survivalofthebestfit.com/",
+    "imageCredit": "Survival of the Best Fit 제작팀 · 공식 사이트 캡처",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 소개·제작자 저장소·초반 게임 화면",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/survival-hiring.png",
+        "caption": "채용할 인원을 안내하고 지원자를 선택하게 하는 게임 화면",
+        "source": "https://www.survivalofthebestfit.com/game/",
+        "credit": "Survival of the Best Fit 제작팀",
+        "type": "게임 플레이 캡처"
+      },
+      {
+        "src": "/images/survival-candidate.png",
+        "caption": "지원자 정보를 살펴보고 채용 또는 거절을 선택하는 화면",
+        "source": "https://www.survivalofthebestfit.com/game/",
+        "credit": "Survival of the Best Fit 제작팀",
+        "type": "게임 플레이 캡처"
+      }
+    ]
+  },
+  {
+    "id": "W02",
+    "title": "In Weeks",
+    "kind": "웹사이트",
+    "subtitle": "인생을 주 단위 칸과 구간으로 보여주는 도구",
+    "environment": "웹 브라우저",
+    "timing": "생애 시간 확인·인생 구간 기록",
+    "overview": "생년월일과 국가를 입력하면 인생을 주 단위 격자로 보여주는 웹 도구다. 한 칸이 한 주를 나타내며, 지나온 주와 설정한 수명까지 남은 주를 구분한다. 제작자는 Ziad다.",
+    "features": "국가별 기대수명을 초기 기준으로 사용하고, 사용자가 기준 수명을 조정할 수 있다. Life Chapters에서는 학교·직장·여행 등 인생의 구간에 이름과 시작·종료 날짜, 색을 지정해 격자에 표시한다.",
+    "action": "사용자는 자신의 시간을 한눈에 살펴보고, 기억하고 싶은 시기에 이름을 붙여 표시한다.",
+    "method": "질문을 생성하거나 행동을 차단하는 대신, 시간을 주 단위 칸으로 환산하고 삶의 구간을 색으로 표시한다. 별도의 AI 대화 기능 없이 시각화와 직접 기록으로 구성된 도구다.",
+    "steps": "Get Started를 누르고 생년월일을 입력한다.\n국가를 선택해 기대수명 기준을 불러온다.\n필요하면 기준 수명을 조정한 뒤 See Your Life를 누른다.\n주 단위 격자에서 지나온 시간과 남은 시간을 확인한다.\nLife Chapters의 Add에서 구간 이름·날짜·색을 정해 표시한다.",
+    "conditions": "계정 없이 브라우저에서 이용한다. 사이트는 데이터가 기기에 저장된다고 안내한다. 남은 시간은 국가 평균을 바탕으로 사용자가 정하는 시각화 기준이며 개인의 실제 수명을 예측한 값은 아니다.",
+    "sources": "https://inweeks.org/\nhttps://github.com/zeck00/inweeks",
+    "sourceLabel": "공식 웹사이트 · 공개 소스",
+    "purposes": [
+      "자기·가치관",
+      "감정·경험"
+    ],
+    "ways": [
+      "기록·피드백",
+      "역할·시점 전환"
+    ],
+    "image": "/images/inweeks-thumbnail.png",
+    "imageSource": "https://inweeks.org/",
+    "imageCredit": "In Weeks · 예시 생년월일(2000-01-01)·국가(한국)로 만든 화면",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·예시 입력 화면",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/inweeks-chapters.png",
+        "caption": "주 단위 인생 격자에 대학 시기(예시)를 색으로 표시한 화면. 실제 사용자 기록이 아니다.",
+        "source": "https://inweeks.org/",
+        "credit": "In Weeks · 아카이브에서 예시 데이터 입력",
+        "type": "공식 웹 도구 예시 화면"
+      },
+      {
+        "src": "/images/inweeks-chapter-form.png",
+        "caption": "Life Chapters에서 구간 이름·기간·색을 지정하는 화면",
+        "source": "https://inweeks.org/",
+        "credit": "In Weeks",
+        "type": "공식 웹 도구 캡처"
+      }
+    ]
+  },
+  {
+    "id": "W03",
+    "title": "The Most Dangerous Writing App",
+    "kind": "웹사이트",
+    "subtitle": "입력을 멈추면 글을 잃는 제한 시간 글쓰기 도구",
+    "environment": "웹 브라우저 · 원본 공개 버전",
+    "timing": "글쓰기 세션 진행 중",
+    "overview": "정해진 시간 동안 계속 입력하도록 만든 웹 글쓰기 도구다. 세션이 끝나기 전에 5초 넘게 입력을 멈추면 작성한 내용을 잃는다. Manu Ebert가 제작했으며, 이 항목은 제작자의 GitHub Pages에 남아 있는 원본 버전을 다룬다.",
+    "features": "시작 화면에서 글쓰기 시간을 정한 뒤 빈 편집기에서 글을 쓴다. 입력을 이어 가며 세션을 완료하면 글을 저장할 수 있다. 제작자는 글을 쓰는 도중 계속 평가하고 고치는 습관을 줄이고 글쓰기 흐름에 들어가도록 만드는 것이 목적이라고 설명한다.",
+    "action": "사용자는 세션 길이를 정하고 떠오르는 내용을 계속 입력한다. 잠시 멈추어 문장을 다듬기보다 정해진 시간이 끝날 때까지 글을 이어 간다.",
+    "method": "입력을 멈추었을 때 작성 내용을 잃는 규칙으로 행동을 제약한다. 질문이나 회고 피드백을 제공하는 기능은 없으며, 계속 쓰도록 하는 글쓰기 도구다. AI가 글을 대신 생성하는 기능도 아니다.",
+    "steps": "Session length에서 글쓰기 세션 길이를 정한다.\nStart Writing을 눌러 편집기를 연다.\n세션이 진행되는 동안 글을 계속 입력한다.\n5초 넘게 입력을 멈추면 진행 중인 글을 잃는다.\n정해진 시간 동안 세션을 완료하면 글을 저장한다.",
+    "conditions": "브라우저에서 이용하는 오픈소스 도구다. 규칙상 중단하면 글을 잃으므로 원본을 보존해야 하는 문서보다 별도의 초안이나 연습 글로 이용 방식을 확인할 수 있다. 제작자는 작성 내용이 서버로 전송되거나 저장되지 않는다고 안내한다.",
+    "sources": "https://maebert.github.io/themostdangerouswritingapp/\nhttps://maebert.github.io/themostdangerouswritingapp/help\nhttps://github.com/maebert/themostdangerouswritingapp",
+    "sourceLabel": "원본 웹 도구 · 공식 도움말 · 제작자 저장소",
+    "purposes": [
+      "행동·습관"
+    ],
+    "ways": [
+      "단계·순서 조정"
+    ],
+    "image": "/images/dangerous-writing-thumbnail.png",
+    "imageSource": "https://maebert.github.io/themostdangerouswritingapp/",
+    "imageCredit": "Manu Ebert · 원본 웹사이트 시작 화면",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 도움말·원본 웹 도구",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/dangerous-writing-session.png",
+        "caption": "5분 세션에서 예시 문장을 입력한 편집기 화면. 실제 사용자 글이 아니다.",
+        "source": "https://maebert.github.io/themostdangerouswritingapp/",
+        "credit": "Manu Ebert · 아카이브 예시 입력",
+        "type": "웹 도구 사용 화면"
+      },
+      {
+        "src": "/images/dangerous-writing-expired.png",
+        "caption": "입력을 중단한 뒤 세션이 종료된 화면",
+        "source": "https://maebert.github.io/themostdangerouswritingapp/",
+        "credit": "Manu Ebert · 아카이브 예시 입력",
+        "type": "웹 도구 사용 화면"
+      }
+    ]
+  },
+  {
+    "id": "A04",
+    "title": "Death Clock: The Life Lab",
+    "kind": "독립 앱",
+    "subtitle": "생활습관과 건강 데이터를 수명 추정치로 보여주는 앱",
+    "environment": "iPhone · 웹 계정",
+    "timing": "생활습관 설문·건강 기록 확인·일상 행동 점검",
+    "overview": "Most Days가 제공하는 건강·생활습관 관리 앱이다. 설문 응답을 바탕으로 기대수명을 추정하고, 건강 데이터와 행동 기록에 따라 추정치가 바뀌는 화면을 제공한다. 현재 서비스명은 Death Clock: The Life Lab이다.",
+    "features": "공식 사이트는 29개 질문에 답하면 기대수명 기준을 제시한다고 안내한다. 앱에서는 기대수명과 카운트다운, 수면·걸음 수 등 건강 지표, 일일 행동 항목을 함께 보여준다. 혈액검사 결과와 Apple Health·일부 웨어러블 데이터의 연결, AI 건강 코치 대화와 개인화된 생활 계획도 소개한다.",
+    "action": "사용자는 생활습관 질문에 답하고 건강 기록을 연결한 뒤, 앱이 표시하는 추정치와 행동 항목을 살펴본다. 이후 습관과 기록을 갱신하며 화면의 변화를 확인한다.",
+    "method": "생활습관·건강 데이터와 미래의 수명 추정치를 연결해 표시하고, AI 기반 생활 계획을 제공하는 구조다. 화면의 수치 변화는 서비스 모델의 추정 결과이며 실제로 수명이 늘어난 것을 측정한 값은 아니다.",
+    "steps": "App Store에서 Death Clock: The Life Lab을 설치한다.\n생활습관 설문에 답해 앱이 제시하는 기대수명 기준을 확인한다.\n원하는 경우 지원되는 건강 기록·웨어러블 데이터를 연결한다.\nLife Lab에서 수명 추정치, 건강 지표, 일일 행동 항목을 살펴본다.\n기록과 습관을 갱신하고 앱의 추정치 변화를 확인한다.",
+    "conditions": "iPhone 앱이며 영어로 제공된다. 무료 다운로드 후 전체 개인화 데이터·추적 도구는 구독이 필요하다. 혈액검사 연계는 지역과 플랜에 따라 이용 범위가 다르다. 이 항목은 기능 설계를 소개하며 개인의 사망 시점 예측이나 수명 연장 효과의 정확성을 입증하는 자료는 아니다.",
+    "sources": "https://apps.apple.com/us/app/death-clock-the-life-lab/id6499554412\nhttps://www.deathclock.ai/",
+    "sourceLabel": "App Store · 공식 서비스 소개",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "기록·피드백",
+      "질문·대화"
+    ],
+    "image": "/images/deathclock-thumbnail.svg",
+    "imageSource": "https://apps.apple.com/us/app/death-clock-the-life-lab/id6499554412",
+    "imageCredit": "Most Days · 공식 소개 이미지 두 장을 아카이브에서 배치",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·앱 스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "gallery": [
+      {
+        "src": "/images/deathclock-1.webp",
+        "caption": "설문 기반 기대수명 추정 기능을 소개하는 공식 이미지",
+        "source": "https://apps.apple.com/us/app/death-clock-the-life-lab/id6499554412",
+        "credit": "Most Days",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/deathclock-2.webp",
+        "caption": "Life Lab: 수명 추정치와 건강 지표·행동 항목을 함께 보여주는 공식 예시 화면",
+        "source": "https://apps.apple.com/us/app/death-clock-the-life-lab/id6499554412",
+        "credit": "Most Days",
+        "type": "공식 스토어 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "A05",
+    "title": "WeCroak",
+    "kind": "독립 앱",
+    "environment": "iOS·Android",
+    "sources": "https://apps.apple.com/us/app/wecroak/id1248149943\nhttps://play.google.com/store/apps/details?id=com.kkitcreations.wecroak",
+    "sourceLabel": "제작자 공식 설명·공개 화면",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "단계·순서 조정",
+      "질문·대화"
+    ],
+    "image": "/images/wecroak-thumbnail.svg",
+    "imageSource": "https://apps.apple.com/us/app/wecroak/id1248149943",
+    "imageCredit": "KKIT Creations · 공식 앱 이미지 두 장 배치",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "subtitle": "하루 다섯 번 죽음을 떠올리도록 알리는 앱",
+    "timing": "하루 중 무작위 시점",
+    "overview": "하루 다섯 번, 무작위 시각에 죽음을 떠올리도록 알림을 보내는 앱이다. 알림을 열면 시인·철학자 등의 문구를 읽을 수 있다. 개발사는 KKIT Creations다.",
+    "features": "알림은 오전 7시부터 오후 10시 사이에 온다. 문구를 읽고 잠시 숙고하거나 호흡·명상하도록 권한다. 선택형 Leap 구독에는 일일 회고와 주간 활동 등이 포함된다.",
+    "action": "사용자는 일상 중 알림을 받으면 앱을 열어 문구를 읽고 잠깐 생각할 시간을 갖는다. 회고 기능에서는 그날 중요했던 일을 기록할 수 있다.",
+    "method": "사용 중인 앱을 차단하거나 수명을 계산하지 않는다. 예측하지 못한 순간에 알림을 보내 죽음이라는 주제를 다시 마주하게 하는 구조다.",
+    "steps": "앱을 설치하고 알림을 허용한다.\n오전 7시~오후 10시 사이 무작위로 오는 알림을 확인한다.\n앱을 열어 문구를 읽고 잠시 숙고하거나 호흡한다.\n일일 회고 등 추가 기능은 Leap 제공 범위에서 이용한다.",
+    "conditions": "iOS와 Android로 제공한다. 스토어는 알림을 계속 받으려면 주 1회 앱을 열도록 안내한다. Leap은 선택형 유료 구독이다.",
+    "gallery": [
+      {
+        "src": "/images/wecroak-0.webp",
+        "caption": "죽음에 관한 문구를 읽는 공식 예시 화면",
+        "source": "https://apps.apple.com/us/app/wecroak/id1248149943",
+        "credit": "KKIT Creations",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "/images/wecroak-1.webp",
+        "caption": "하루 중 여러 시점에 도착하는 알림의 공식 예시",
+        "source": "https://apps.apple.com/us/app/wecroak/id1248149943",
+        "credit": "KKIT Creations",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "A06",
+    "title": "Intenty: use phone less",
+    "kind": "독립 앱",
+    "environment": "Android",
+    "sources": "https://play.google.com/store/apps/details?id=com.actureunlock\nhttps://www.intenty.app/about/",
+    "sourceLabel": "제작자 공식 설명·공개 화면",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "단계·순서 조정",
+      "질문·대화"
+    ],
+    "image": "https://play-lh.googleusercontent.com/J9YMv8LLQ96McFJPPSntyeDiZWAaNA5fZhrNfYSXJJzNZLnlyjdl113gE0HI-azs14V5p-22TjsN4T8ojzKR=w1052-h592-rw",
+    "imageSource": "https://play.google.com/store/apps/details?id=com.actureunlock",
+    "imageCredit": "Yaroslav Neznaradko · Google Play 공식 이미지",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "subtitle": "잠금을 풀면 사용 이유를 묻는 앱",
+    "timing": "휴대폰 잠금 해제 직후·설정한 사용 도중",
+    "overview": "휴대폰 잠금을 푼 직후 질문 화면을 띄워 사용 목적을 확인하게 하는 Android 앱이다. 예전 이름은 Acture·Actuflow이며, 현재 이름은 Intenty다.",
+    "features": "사용 목적 적기, 지금 필요한지 고르기, 체크리스트, 호흡 대기 등 여러 종류의 개입을 설정할 수 있다. 직접 만든 질문도 사용할 수 있고 응답 기록을 돌아볼 수 있다.",
+    "action": "사용자는 잠금을 푼 뒤 나타난 질문을 읽고 목적을 적거나 선택지에 응답한다. 필요한 설정에서는 호흡 대기나 사용 도중의 재확인 안내를 거친다.",
+    "method": "휴대폰을 켜는 행동과 실제 사용 사이에 질문을 배치한다. 응답 내용과 개입 빈도 등을 설정해 사용할 수 있으며, 앱 전체를 무조건 차단하는 방식과 구분된다.",
+    "steps": "Google Play에서 설치하고 안내에 따라 잠금 해제 후 표시 권한을 설정한다.\n사용 목적·필요성 확인 등 원하는 질문 방식을 고른다.\n개입 빈도와 질문을 설정한다.\n휴대폰을 열 때 표시되는 질문에 답하고 사용을 이어갈지 결정한다.\n응답 기록에서 적었던 이유를 살펴본다.",
+    "conditions": "Android 전용 앱이며 앱 내 구매를 제공한다. 표시 권한과 기능 범위는 설치한 버전의 안내에서 확인한다.",
+    "gallery": [
+      {
+        "src": "https://play-lh.googleusercontent.com/J9YMv8LLQ96McFJPPSntyeDiZWAaNA5fZhrNfYSXJJzNZLnlyjdl113gE0HI-azs14V5p-22TjsN4T8ojzKR=w1052-h592-rw",
+        "caption": "Intenty 제작자가 공개한 질문·설정 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.actureunlock",
+        "credit": "Yaroslav Neznaradko",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "https://play-lh.googleusercontent.com/q5w7L67b3OJn_mpe30Dvsp2tYYR_1oKfBgXokELif9GyPa7P5g7wT5xUUNWSH_WcuNZatuYTaDsjHQYhlPPo=w1052-h592-rw",
+        "caption": "Intenty 제작자가 공개한 질문·설정 화면",
+        "source": "https://play.google.com/store/apps/details?id=com.actureunlock",
+        "credit": "Yaroslav Neznaradko",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "A07",
+    "title": "Jomo",
+    "kind": "독립 앱",
+    "environment": "iPhone·Mac",
+    "sources": "https://jomo.so/features\nhttps://help.jomo.so/en/article/how-does-jomos-journaling-feature-work-lztcei/",
+    "sourceLabel": "제작자 공식 설명·공개 화면",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "단계·순서 조정",
+      "질문·대화"
+    ],
+    "image": "/images/jomo-unlocks.png",
+    "imageSource": "https://jomo.so/features",
+    "imageCredit": "Jomo SAS · 공식 기능 소개 캡처",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "subtitle": "앱 실행 전 해제 조건과 사용 후 기록을 제공하는 앱",
+    "timing": "제한한 앱을 열기 전·사용 기록 확인",
+    "overview": "앱·웹사이트 사용 규칙과 해제 조건을 직접 설정하는 도구다. 제한된 앱을 열 때 기다리거나 사용 이유를 적는 단계를 두고, 이후 사용 내용을 기록·분류할 수 있다.",
+    "features": "Unlocks에는 대기, 이유 제시, 문구 입력, QR 코드 등의 해제 방식이 있다. Journaling에서는 앱에서 무엇을 했는지 활동을 지정하고 생산적·주의 분산 등의 분류를 선택할 수 있다. 공식 페이지는 별도로 AI 증명 제출 기능도 소개한다.",
+    "action": "사용자는 어떤 앱에 언제 제약을 둘지 정하고 해제 방식을 선택한다. 앱을 열기 전 설정한 조건을 수행하고, 사용 기록에 활동과 평가를 남긴다.",
+    "method": "실행 전의 해제 조건과 사용 후의 활동 기록을 함께 제공한다. 이유 입력이나 대기는 사용자가 설정하는 방식이며, 이 기능 전체가 AI에 의해 판단되는 것은 아니다.",
+    "steps": "공식 사이트에서 기기에 맞는 Jomo 앱을 설치한다.\n제한할 앱·웹사이트와 시간 규칙을 정한다.\n해제 조건으로 대기나 사용 이유 입력 등을 선택한다.\n제한한 앱을 열 때 해제 조건을 거친다.\nHome의 사용 기록에서 활동과 생산적·주의 분산 여부를 지정한다.",
+    "conditions": "iPhone과 Mac용 기능을 제공한다. 기기별 기능과 유료 플랜 범위는 공식 안내에서 확인한다.",
+    "gallery": [
+      {
+        "src": "/images/jomo-unlocks.png",
+        "caption": "공식 기능 안내: Strict Mode·Unlocks·Journaling을 구분해 소개한다.",
+        "source": "https://jomo.so/features",
+        "credit": "Jomo SAS",
+        "type": "공식 사이트 캡처",
+        "layout": ""
+      }
+    ]
+  },
+  {
+    "id": "A08",
+    "title": "ScreenZen — Screen Time Control",
+    "kind": "독립 앱",
+    "environment": "iOS·Android·macOS·Windows",
+    "sources": "https://apps.apple.com/us/app/screenzen-screen-time-control/id1541027222\nhttps://screenzen.co/",
+    "sourceLabel": "제작자 공식 설명·공개 화면",
+    "purposes": [
+      "행동·습관",
+      "자기·가치관"
+    ],
+    "ways": [
+      "단계·순서 조정",
+      "질문·대화"
+    ],
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/19/b3/4f19b35c-1cd9-06d0-e570-94d187600cff/iPhone-EN-02-B.jpg/314x680bb.webp",
+    "imageSource": "https://apps.apple.com/us/app/screenzen-screen-time-control/id1541027222",
+    "imageCredit": "ScreenZen LLC · 공식 App Store 이미지",
+    "note": "",
+    "professorNote": "",
+    "evidence": "공식 사이트·스토어 설명",
+    "limits": "",
+    "classification": "출처 기반 정리",
+    "curationVersion": 1,
+    "subtitle": "앱 실행 전 기다리고 다시 선택하게 하는 도구",
+    "timing": "앱 실행 직전·정해진 사용 시간 이후",
+    "overview": "선택한 앱이나 웹사이트를 열기 전에 대기 화면을 띄우는 사용 관리 도구다. 대기 후 사용할지 다시 선택하게 하거나, 짧은 사용 시간이 끝났을 때 개입하도록 설정할 수 있다.",
+    "features": "반복 실행에 따라 대기를 늘리고, 실행 전 질문 문구를 표시할 수 있다. 사용 횟수·시간·일정별 제한과 설정 변경 잠금도 제공한다. 스토어는 호흡·기록·학습 같은 활동으로 앱 실행 기회를 얻는 Practice 기능도 안내한다.",
+    "action": "사용자는 제약을 둘 앱과 대기·사용 시간을 정한다. 실행 전 화면에서 잠시 기다린 뒤 계속 사용할지 결정하고, 사용 시간이 끝나면 다시 개입을 받는다.",
+    "method": "앱을 누르면 곧바로 열리는 흐름에 시간 지연과 재선택 단계를 넣는다. 질문 문구는 선택적 설정이며 강한 차단과 짧은 대기 등 여러 수준의 제약을 구성할 수 있다.",
+    "steps": "앱을 설치하고 안내에 따라 사용 관리 권한을 설정한다.\n제한할 앱·웹사이트를 고른다.\n대기 시간·실행 횟수·사용 시간과 질문 문구를 정한다.\n선택한 앱을 열 때 개입 화면을 거친다.\n사용 기록을 확인하고 규칙을 조정한다.",
+    "conditions": "여러 운영체제로 제공되며 지원 기능은 플랫폼에 따라 다를 수 있다. 공식 사이트는 핵심 사용 관리 기능을 기부 기반 무료 서비스로 소개한다.",
+    "gallery": [
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/19/b3/4f19b35c-1cd9-06d0-e570-94d187600cff/iPhone-EN-02-B.jpg/314x680bb.webp",
+        "caption": "앱 실행 횟수와 세션 길이 설정을 소개하는 공식 화면",
+        "source": "https://apps.apple.com/us/app/screenzen-screen-time-control/id1541027222",
+        "credit": "ScreenZen LLC",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      },
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/85/3e/50/853e5002-7d34-1f86-5472-e44b3cf30a81/iPhone-EN-03.jpg/314x680bb.webp",
+        "caption": "호흡·기록 등의 활동으로 실행 기회를 얻는 기능을 소개하는 공식 화면",
+        "source": "https://apps.apple.com/us/app/screenzen-screen-time-control/id1541027222",
+        "credit": "ScreenZen LLC",
+        "type": "공식 앱 이미지",
+        "layout": "portrait"
+      }
+    ]
+  },
+  {
+    "id": "R01",
+    "title": "AI Plan–based Cognitive Forcing Functions",
+    "subtitle": "AI가 세운 계획을 검토하는 단계",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "environment": "브라우저 기반 AI 글쓰기 연구 시스템",
+    "timing": "AI가 세운 계획을 검토하는 단계",
+    "overview": "AI가 만든 글과 실행 계획을 검토하도록 설계한 웹 연구 프로토타입이다. 논문 「An Experimental Comparison of Cognitive Forcing Functions for Execution Plans in AI-Assisted Writing」에서 전제 검토와 가정 변경 질문을 비교했다.",
+    "features": "Assumptions에서는 계획의 특정 단계를 고르고 그 단계가 전제한 조건을 선택하거나 직접 적는다. WhatIf에서는 핵심 단계를 고른 뒤 그 단계가 달라지거나 실패하면 결과가 어떻게 바뀔지 답한다. 두 질문을 차례로 제시하는 조건도 있다.",
+    "action": "사용자는 AI 계획에 관한 질문에 응답한 뒤 산출물의 준비 상태를 평가하고 후속 수정 지시를 작성한다.",
+    "method": "Assumptions 조건은 최소 한 단계에 대한 응답을 마쳐야 다음 평가로 넘어갈 수 있다. 정답을 맞히는 퀴즈가 아니라 AI 계획의 전제와 대안을 검토하는 절차다.",
+    "steps": "논문의 과제와 자료를 확인한다.\nAI Assist Me를 눌러 생성된 계획과 초안을 본다.\n계획의 한 단계를 선택해 숨은 전제 또는 변경 시 결과를 검토한다.\nAI 산출물의 준비 상태를 평가하고 수정 지시를 적는다.",
+    "conditions": "논문에서 구현·평가한 연구용 프로토타입이다. 일반 사용자가 가입해 쓰는 상용 서비스로 안내하지 않는다.",
+    "sources": "https://arxiv.org/html/2601.18033v1\nhttps://arxiv.org/abs/2601.18033",
+    "sourceLabel": "연구 논문 · 시스템 설계 및 인터페이스",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/r01-overview.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2601.18033v1",
+    "imageCredit": "논문 저자팀 · 논문 수록 화면",
+    "gallery": [
+      {
+        "src": "/images/r01-overview.png",
+        "caption": "논문 Figure 1: AI 계획 기반 검토 인터페이스의 전체 흐름",
+        "source": "https://arxiv.org/html/2601.18033v1",
+        "credit": "논문 저자팀",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r01-assumptions.png",
+        "caption": "논문 Figure 2(c): 선택한 계획 단계의 전제를 묻는 Assumptions",
+        "source": "https://arxiv.org/html/2601.18033v1",
+        "credit": "논문 저자팀",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r01-whatif.png",
+        "caption": "논문 Figure 2(d): 핵심 단계가 달라질 경우를 묻는 WhatIf",
+        "source": "https://arxiv.org/html/2601.18033v1",
+        "credit": "논문 저자팀",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 프로토타입 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "논문 본문과 인터페이스",
+    "limits": ""
+  },
+  {
+    "id": "R02",
+    "title": "Metacognitive Scaffolds",
+    "subtitle": "AI 초안을 생성하기 전 목표와 작업 단계 설정",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "environment": "브라우저 기반 AI 글쓰기 연구 시스템",
+    "timing": "AI 초안을 생성하기 전 목표와 작업 단계 설정",
+    "overview": "Microsoft Research 연구팀이 구현한 AI 글쓰기 웹 프로토타입이다. 논문 「Metacognitive Scaffolds Create Productive Friction for AI-Assisted Knowledge Work」에서 일반 채팅·문서 편집 화면에 목표 설정과 작업 분해 패널을 추가했다.",
+    "features": "요청을 입력하면 전달할 메시지, 대상 독자, 독자에게 기대하는 결과, 글의 목적과 범위를 정하는 필드가 나온다. 이후 분석 방식, 글의 구조, 고려할 사항을 선택하는 작업별 패널이 생성된다. 항목은 고정 템플릿이 아니라 현재 요청과 선택에 따라 갱신된다.",
+    "action": "사용자는 목표와 작업 방식을 구체화하고, 그 선택을 바탕으로 생성된 초안을 문서에서 편집한다. 패널 자체를 바꿔 달라고 자연어로 요청할 수도 있다.",
+    "method": "초안 생성 전에 목적과 접근 방식을 사용자가 정하는 단계를 둔다. 결과를 받는 채팅에 목표 설정과 작업 분해 조작을 더한 구조다.",
+    "steps": "글쓰기 요청을 입력한다.\n목표 설정 패널에서 독자·메시지·목적·범위를 정한다.\n작업 분해 패널에서 분석 방식과 구성을 선택한다.\n선택을 반영한 초안을 생성하고 직접 편집한다.\n필요하면 자연어로 패널 항목의 변경을 요청한다.",
+    "conditions": "논문에서 구현·평가한 연구용 프로토타입이다. 일반 사용자가 가입해 쓰는 상용 서비스로 안내하지 않는다.",
+    "sources": "https://arxiv.org/html/2610.30945v1\nhttps://arxiv.org/abs/2610.30945",
+    "sourceLabel": "연구 논문 · 시스템 설계 및 인터페이스",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/r02-goals.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2610.30945v1",
+    "imageCredit": "Viktor Kewenig 외 · Microsoft Research · 논문 수록 화면",
+    "gallery": [
+      {
+        "src": "/images/r02-goals.png",
+        "caption": "논문 부록: 목표를 구체화하는 Goal Clarity 인터페이스",
+        "source": "https://arxiv.org/html/2610.30945v1",
+        "credit": "Viktor Kewenig 외 · Microsoft Research",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r02-tasks.png",
+        "caption": "논문 부록: 작업을 단계로 나누는 Task Decomposition 인터페이스",
+        "source": "https://arxiv.org/html/2610.30945v1",
+        "credit": "Viktor Kewenig 외 · Microsoft Research",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r02-overview.png",
+        "caption": "논문 Figure 1: 인터페이스와 연구 설계의 전체 개요",
+        "source": "https://arxiv.org/html/2610.30945v1",
+        "credit": "Viktor Kewenig 외 · Microsoft Research",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 프로토타입 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "논문 본문과 인터페이스",
+    "limits": ""
+  },
+  {
+    "id": "R03",
+    "title": "Proactive Thought Partners",
+    "subtitle": "글쓰기 중 설정한 조건에 따라 질문과 관점 제안",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "environment": "브라우저 기반 AI 글쓰기 연구 시스템",
+    "timing": "글쓰기 중 설정한 조건에 따라 질문과 관점 제안",
+    "overview": "Cornell University와 Google DeepMind 연구진이 글쓰기 중 먼저 제안하는 AI 파트너를 구현한 웹 연구 프로토타입이다. 논문명은 「Designing Proactive Thought Partners for Writing」이다.",
+    "features": "사용자가 AI 파트너의 역할과 개입 조건을 정한다. 근거를 점검하거나 주장을 반박하는 역할을 만들고, 입력 멈춤·문장 완성·텍스트 선택 같은 시점과 문맥 조건을 지정한다. 조건에 맞으면 편집기 옆에 제안이 나타난다.",
+    "action": "사용자는 제안을 무시하거나 열어 읽고, 후속 질문을 하거나 Help Me Write로 문서 수정을 요청한다. 수정 결과는 수락하거나 되돌릴 수 있다.",
+    "method": "요청할 때만 답하는 채팅과 달리, 설정한 문맥에서 질문형 제안을 먼저 보여준다. 제안을 읽거나 적용하는 선택권은 사용자에게 있다.",
+    "steps": "글쓰기 목표를 입력한다.\n파트너의 역할과 개입 시점·문맥 조건을 설정한다.\nMarkdown 편집기에서 글을 쓴다.\n나타나는 제안을 무시하거나 열어 질문을 주고받는다.\n필요하면 문서 수정을 요청하고 수락·되돌리기를 선택한다.",
+    "conditions": "논문에서 구현·평가한 연구용 프로토타입이다. 일반 사용자가 가입해 쓰는 상용 서비스로 안내하지 않는다.",
+    "sources": "https://arxiv.org/html/2609.01588v1\nhttps://arxiv.org/abs/2609.01588",
+    "sourceLabel": "연구 논문 · 시스템 설계 및 인터페이스",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/r03-editor.jpg",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2609.01588v1",
+    "imageCredit": "Chao Zhang · Abe Davis · Chih-Wei Chen · Chin-Chia Hsu · 논문 수록 화면",
+    "gallery": [
+      {
+        "src": "/images/r03-editor.jpg",
+        "caption": "논문 Figure 2: 편집기와 AI 파트너의 제안 패널",
+        "source": "https://arxiv.org/html/2609.01588v1",
+        "credit": "Chao Zhang · Abe Davis · Chih-Wei Chen · Chin-Chia Hsu",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r03-config.jpg",
+        "caption": "논문 Figure 3: 파트너 역할과 개입 조건 설정",
+        "source": "https://arxiv.org/html/2609.01588v1",
+        "credit": "Chao Zhang · Abe Davis · Chih-Wei Chen · Chin-Chia Hsu",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/r03-engagement.jpg",
+        "caption": "논문 Figure 5: 제안 표시·무시·질문·문서 수정의 흐름",
+        "source": "https://arxiv.org/html/2609.01588v1",
+        "credit": "Chao Zhang · Abe Davis · Chih-Wei Chen · Chin-Chia Hsu",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 프로토타입 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "논문 본문과 인터페이스",
+    "limits": ""
+  },
+  {
+    "id": "R04",
+    "title": "Critical Inker",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "Critical Inker",
+    "environment": "웹 브라우저 · MIT 연구 프로젝트",
+    "timing": "글을 작성한 후 논증을 검토할 때",
+    "overview": "MIT Media Lab의 Philipp Hugenroth, Valdemar Danry, Pattie Maes가 개발한 웹 글쓰기 연구 도구다. 사용자가 쓴 글에서 주장과 근거, 논리적 연결을 분석하고 시각적 피드백 또는 소크라테스식 대화로 검토하게 한다.",
+    "features": "Visual Feedback은 논증 구조와 논리적 문제를 직접 표시한다. Socratic Chatbot은 특정 논증에 대한 질문을 던지고, 사용자가 문제를 자기 말로 설명한 뒤 해당 문장에 수정 메모를 붙인다.",
+    "action": "사용자는 글을 먼저 쓰고 분석을 실행한다. 질문에 답하며 논리적 문제를 찾아 설명하고, 문장에 붙은 메모를 참고해 직접 고친다.",
+    "method": "입력하는 동안에는 피드백하지 않는다. 소크라테스 모드에서는 정답이나 완성된 수정문을 먼저 제시하기보다 사용자가 문제를 설명하도록 대화를 진행한다.",
+    "steps": "편집기에서 논증문을 작성한다.\n분석을 실행해 주장·근거의 구조를 추출한다.\n시각적 피드백 또는 소크라테스식 대화로 문제를 검토한다.\n대화 모드에서는 질문에 답해 문제와 수정 의도를 설명한다.\n생성된 수정 메모를 참고해 글을 고친다.",
+    "conditions": "논문에서 구현·평가한 연구용 웹 도구다. 공개 프로젝트와 논문을 통해 설계를 확인할 수 있으며 상용 서비스 가입 경로로 안내하지 않는다.",
+    "sources": "https://arxiv.org/html/2604.07167v1\nhttps://www.media.mit.edu/projects/critical-inker/overview/",
+    "sourceLabel": "MIT 공식 프로젝트 소개 · 연구 논문",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/mit-critical-overview.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2604.07167v1",
+    "imageCredit": "Philipp Hugenroth · Valdemar Danry · Pattie Maes",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/mit-critical-overview.png",
+        "caption": "논문 Figure 1: 시각적 피드백과 소크라테스 대화 모드",
+        "source": "https://arxiv.org/html/2604.07167v1",
+        "credit": "Philipp Hugenroth · Valdemar Danry · Pattie Maes",
+        "type": "논문 수록 화면"
+      },
+      {
+        "src": "/images/mit-critical-socratic.png",
+        "caption": "논문 Figure 2: 대화에서 설명한 수정 의도가 문장에 연결된 메모가 되는 과정",
+        "source": "https://arxiv.org/html/2604.07167v1",
+        "credit": "Philipp Hugenroth · Valdemar Danry · Pattie Maes",
+        "type": "논문 수록 화면"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "공식 소개 및 연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R05",
+    "title": "Future You",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "Future You",
+    "environment": "웹 브라우저 · MIT 연구 프로젝트",
+    "timing": "현재 경험과 미래 목표를 돌아보는 대화 중",
+    "overview": "MIT Media Lab과 공동 연구진이 만든 미래 자아 대화 연구 플랫폼이다. 현재의 경험과 미래 목표를 입력하면 그 정보를 바탕으로 구성된 60세의 가상 자아와 대화한다. 공식 프로젝트가 자기성찰을 목표로 명시한 사례다.",
+    "features": "사전 질문으로 삶의 경험과 목표를 수집하고, 나이 든 얼굴 이미지와 가상의 미래 경험을 구성한다. AI는 이 설정을 바탕으로 미래의 나라는 역할로 응답한다.",
+    "action": "사용자는 미래의 삶과 선택에 관해 묻고, 미래 자아가 말하는 경험에 반응하며 대화를 이어간다.",
+    "method": "현재의 문제를 미래 자아의 시점에서 바라보는 대화 구조다. 미래 경험은 사용자 입력을 바탕으로 생성한 설정이며 실제 미래를 예측한 기록은 아니다.",
+    "steps": "공식 프로젝트 페이지에서 Try Future You를 연다.\n연구 참여 안내를 확인하고 현재 경험과 미래 목표에 답한다.\n안내에 따라 미래 자아의 이미지와 설정을 구성한다.\n미래의 나에게 질문하고 대화를 이어간다.",
+    "conditions": "연구용 플랫폼이며 이용 가능 범위는 공식 접속 화면의 안내를 따른다. 공식 설명은 설문 응답과 대화를 익명화해 연구를 위해 수집한다고 안내한다.",
+    "sources": "https://www.media.mit.edu/projects/future-you/overview/\nhttps://arxiv.org/abs/2405.12514\nhttps://futureyou.media.mit.edu/",
+    "sourceLabel": "MIT 공식 프로젝트 소개 · 연구 논문",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/mit-future-you.jpg",
+    "thumbnailOverride": true,
+    "imageSource": "https://news.mit.edu/2024/ai-simulation-gives-people-glimpse-potential-future-self-1001",
+    "imageCredit": "Future You; Melanie Gonick, MIT",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/mit-future-you.jpg",
+        "caption": "현재와 미래 자아를 함께 보여주는 공식 소개 이미지",
+        "source": "https://news.mit.edu/2024/ai-simulation-gives-people-glimpse-potential-future-self-1001",
+        "credit": "Future You; Melanie Gonick, MIT",
+        "type": "MIT 공식 소개 이미지"
+      },
+      {
+        "src": "/images/mit-future-system.png",
+        "caption": "논문 Figure 2: 사용자 정보·미래 기억·이미지·대화의 구성 흐름",
+        "source": "https://arxiv.org/abs/2405.12514",
+        "credit": "Pat Pataranutaporn 외 · Future You 연구팀",
+        "type": "논문 수록 도식"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "공식 소개 및 연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R06",
+    "title": "Supermind Ideator",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "Supermind Ideator",
+    "environment": "웹 브라우저 · MIT 연구 프로젝트",
+    "timing": "문제를 정의하고 해결 방향을 탐색할 때",
+    "overview": "MIT Center for Collective Intelligence가 개발한 AI 기반 문제 탐색·아이디어 도구다. 사용자가 입력한 문제를 여러 관점에서 재구성하고 가능한 해결 방향을 탐색하도록 구성됐다.",
+    "features": "Explore Problem에서 문제의 부분과 유형을 나누거나 더 큰 맥락을 살펴보고, 유사 사례와 놓친 요소를 탐색한다. Explore Solutions는 해결 방향을 제안하며 More Choices에서는 탐색 방식을 고를 수 있다.",
+    "action": "사용자는 짧은 문제 문장을 입력하고 탐색 방식을 선택한다. 생성된 관점을 읽고 문제 문장을 다시 정리하거나 유망한 아이디어를 골라 확장한다.",
+    "method": "논문의 Reflect는 현재 문제 정의에서 빠진 점을, Reformulate는 문제를 다르게 표현하는 방법을 묻는다. 이용을 강제로 중단시키는 잠금보다는 문제를 재검토하는 선택지를 제공한다.",
+    "steps": "공식 사이트에서 문제 문장을 짧고 구체적으로 입력한다.\nExplore Problem으로 문제의 범위·부분·유사 상황을 살펴본다.\n필요하면 문제 문장을 수정한다.\nExplore Solutions 또는 More Choices로 다른 해결 방향을 탐색한다.\n유용한 아이디어를 골라 결합하거나 다듬는다.",
+    "conditions": "연구에서 출발한 공개 웹 도구다. 접속·계정·이용 한도는 현재 사이트 안내를 따른다. 수록 화면은 논문 발표 당시 버전이다.",
+    "sources": "https://arxiv.org/html/2311.01937v1\nhttps://ideator.mit.edu/\nhttps://ideator.mit.edu/about",
+    "sourceLabel": "MIT 공식 프로젝트 소개 · 연구 논문",
+    "purposes": [],
+    "ways": [],
+    "image": "/images/mit-ideator-interface.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2311.01937v1",
+    "imageCredit": "Steven R. Rick 외 · MIT Center for Collective Intelligence",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/mit-ideator-interface.png",
+        "caption": "논문 Figure 2: 문제 입력·탐색 방식 선택과 생성된 아이디어",
+        "source": "https://arxiv.org/html/2311.01937v1",
+        "credit": "Steven R. Rick 외 · MIT Center for Collective Intelligence",
+        "type": "논문 수록 화면"
+      },
+      {
+        "src": "/images/mit-ideator-system.png",
+        "caption": "논문 Figure 3: 인터페이스·API·언어모델로 구성한 시스템",
+        "source": "https://arxiv.org/html/2311.01937v1",
+        "credit": "Steven R. Rick 외 · MIT Center for Collective Intelligence",
+        "type": "논문 수록 도식"
+      }
+    ],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "공식 소개 및 연구 논문",
+    "limits": "",
+    "reviewStatus": "향후 검토",
+    "reviewText": "공식 도구와 논문에서 문제 정의를 돌아보는 Reflect·Reformulate 기능을 설명한다. 이 상호작용을 성찰·프릭션으로 어떻게 분류할지는 향후 검토한다."
+  },
+  {
+    "id": "R07",
+    "title": "AuthScribe",
+    "kind": "플러그인 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "AuthScribe",
+    "environment": "Obsidian 플러그인 · 기기 내 언어모델",
+    "timing": "일기를 작성하고 AI 제안을 자신의 표현으로 옮길 때",
+    "overview": "개인의 기록을 바탕으로 성찰 일기 작성을 돕는 Obsidian 연구 플러그인이다. 사용자가 먼저 경험을 적고, 필요한 순간에 AI 질문이나 확장 제안을 요청한다.",
+    "features": "Reflect는 현재 생각을 더 살펴보는 질문을, Expand는 가능한 해석이나 다음 문장을 제안한다. 과거 일기를 근거로 질문하면 Autobiographical Citations로 원문을 확인할 수 있다.",
+    "action": "사용자는 AI의 개입 시점과 응답 관점을 고른다. 생성된 초안 중 경험에 맞는 내용을 판단하고 자기 말로 다시 표현해 일기를 쓴다.",
+    "method": "AI의 Expand 결과는 회색 이탤릭체의 읽기 전용 Provisional Draft로 표시된다. AI 제안과 사용자가 직접 쓴 문장을 구분하고, 제안을 자신의 표현으로 바꾸는 단계를 둔다.",
+    "steps": "자신의 경험을 일기에 먼저 적는다.\nReflect 또는 Expand와 응답 관점을 선택한다.\n과거 기록 인용이 있으면 원문 맥락을 확인한다.\nAI 제안을 읽고 필요한 내용을 자기 말로 다시 표현한다.",
+    "conditions": "논문에서 구현·평가한 연구용 시스템이다. 아래 이용 방법은 논문에 기술된 흐름이며, 일반 사용자가 즉시 설치·가입할 수 있는 배포 서비스와는 구분한다.",
+    "sources": "https://arxiv.org/html/2610.15439v1",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "/images/authscribe-interface.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2610.15439v1",
+    "imageCredit": "Lanping Hu 외 · AuthScribe 연구팀",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/authscribe-interface.png",
+        "caption": "논문 Figure 1: 개인 기록·일기·AI 질문·읽기 전용 초안",
+        "source": "https://arxiv.org/html/2610.15439v1",
+        "credit": "Lanping Hu 외 · AuthScribe 연구팀",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/authscribe-pipeline.png",
+        "caption": "논문 Figure 2: 기기 내 검색과 언어모델 처리 흐름",
+        "source": "https://arxiv.org/html/2610.15439v1",
+        "credit": "Lanping Hu 외 · AuthScribe 연구팀",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R08",
+    "title": "CoEmpaTeam",
+    "kind": "독립 앱 · VR 연구 프로토타입",
+    "research": true,
+    "subtitle": "CoEmpaTeam",
+    "environment": "VR · Unity · LLM 아바타",
+    "timing": "공동생활 갈등에서 다른 인물의 역할로 협상할 때",
+    "overview": "LLM 기반 아바타와 역할을 바꾸어 가며 관점 취하기를 연습하는 VR 연구 시스템이다. 공동생활을 계속할지와 생활 규칙을 어떻게 바꿀지를 여러 입장에서 논의한다.",
+    "features": "사용자는 인물의 생활 기록·숨은 동기·성격이 담긴 역할 카드를 읽고, 서로 다른 성격을 가진 AI 아바타들과 대화한다. 여러 세션에 걸쳐 세 인물의 역할을 번갈아 맡는다.",
+    "action": "사용자는 현재 맡은 인물의 입장에서 의견을 말하고 상대의 응답에 반응한다. 다른 세션에서는 앞서 상대였던 인물의 사정과 입장을 맡아 협상한다.",
+    "method": "한 사람의 관점에 머무르지 않고 역할을 교체하게 만든다. AI 아바타는 역할 설정에 따라 대화에 응답하며, VR에서 인물의 신체 시점을 제공한다.",
+    "steps": "역할을 선택하고 인물의 배경·동기·규칙에 대한 입장을 읽는다.\n공동생활 회의에서 두 AI 아바타와 대화한다.\n발화를 마치면 Finish speaking으로 응답을 보낸다.\n다른 세션에서 역할을 바꾸어 같은 갈등을 다른 입장에서 다룬다.",
+    "conditions": "논문에서 구현·평가한 연구용 시스템이다. 아래 이용 방법은 논문에 기술된 흐름이며, 일반 사용자가 즉시 설치·가입할 수 있는 배포 서비스와는 구분한다.",
+    "sources": "https://arxiv.org/html/2603.16614v1\nhttps://github.com/kindhui62/CoEmpaTeam",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "/images/coempa-interface.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2603.16614v1",
+    "imageCredit": "Dehui Kong · Martin Feick · Shi Liu · Alexander Maedche",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/coempa-interface.png",
+        "caption": "논문 Figure 3: 역할 선택·인물 정보·신체 시점의 사용 흐름",
+        "source": "https://arxiv.org/html/2603.16614v1",
+        "credit": "Dehui Kong · Martin Feick · Shi Liu · Alexander Maedche",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/coempa-avatars.png",
+        "caption": "논문 Figure 2: 성격이 다른 세 아바타",
+        "source": "https://arxiv.org/html/2603.16614v1",
+        "credit": "Dehui Kong · Martin Feick · Shi Liu · Alexander Maedche",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/coempa-scene.png",
+        "caption": "논문 Figure 4: 아바타와의 그룹 상호작용 장면",
+        "source": "https://arxiv.org/html/2603.16614v1",
+        "credit": "Dehui Kong · Martin Feick · Shi Liu · Alexander Maedche",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R09",
+    "title": "CompassioMate",
+    "kind": "시리어스 게임 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "CompassioMate",
+    "environment": "AI NPC와 피드백을 활용한 연구용 게임",
+    "timing": "방언 차별 상황의 판단·대사 수정·결과 확인",
+    "overview": "방언과 억양에 대한 편견을 다루는 AI 기반 시리어스게임이다. 플레이어는 방언 탐정으로 지역의 말소리를 듣고 차별 상황의 대화를 살펴보며 대응을 연습한다.",
+    "features": "초기 단계에서는 방언의 지역과 편견을 유발한 문장을 찾는다. 이후 편견의 이유를 구분하고, 마지막 단계에서는 핵심 대사를 직접 고친다. AI가 수정한 표현을 평가하며 이야기의 결말이 분기된다.",
+    "action": "사용자는 AI NPC와 대화하며 상황을 파악하고, 표현을 수정한 뒤 피드백과 결말을 확인한다.",
+    "method": "잘못된 선택에는 AI 안내와 재시도를 제공한다. 대사 수정 단계에서는 표현의 공감성·적극성·건설성·적응성을 평가하고 그 결과를 이야기의 결과로 연결한다.",
+    "steps": "방언 음성을 듣고 지도에서 지역을 고른다.\n장면 속 대화에서 편견이 드러나는 문장과 이유를 찾는다.\nAI NPC와 안내 캐릭터의 설명을 확인한다.\n핵심 대사를 직접 수정한다.\nAI 평가와 달라지는 결말을 확인한다.",
+    "conditions": "논문에서 구현·평가한 연구용 시스템이다. 아래 이용 방법은 논문에 기술된 흐름이며, 일반 사용자가 즉시 설치·가입할 수 있는 배포 서비스와는 구분한다.",
+    "sources": "https://arxiv.org/html/2603.14260v1",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "/images/compassiomate-scenes.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2603.14260v1",
+    "imageCredit": "Sicheng Lu · Erick Purwanto · Hong Liu · Aini Li · Adel Chaouch-Orozco",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/compassiomate-scenes.png",
+        "caption": "논문 수록 게임 장면: 직장·학교·일상 속 방언 관련 갈등",
+        "source": "https://arxiv.org/html/2603.14260v1",
+        "credit": "Sicheng Lu · Erick Purwanto · Hong Liu · Aini Li · Adel Chaouch-Orozco",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/compassiomate-ai.png",
+        "caption": "논문 수록 AI NPC 대화와 안내 화면",
+        "source": "https://arxiv.org/html/2603.14260v1",
+        "credit": "Sicheng Lu · Erick Purwanto · Hong Liu · Aini Li · Adel Chaouch-Orozco",
+        "type": "논문 수록 인터페이스"
+      },
+      {
+        "src": "/images/compassiomate-outcomes.png",
+        "caption": "논문 Figure 5: 대사 수정의 AI 평가와 세 가지 결말",
+        "source": "https://arxiv.org/html/2603.14260v1",
+        "credit": "Sicheng Lu · Erick Purwanto · Hong Liu · Aini Li · Adel Chaouch-Orozco",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R10",
+    "title": "Jamplate",
+    "kind": "플러그인 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "Jamplate",
+    "environment": "FigJam 플러그인 · GPT-4",
+    "timing": "디자인 보드에서 문제의 원인을 단계적으로 탐색할 때",
+    "overview": "디자인 화이트보드 템플릿 안에 언어모델을 연결한 FigJam 연구 플러그인이다. Five Whys와 경쟁 분석 템플릿에서 사용자 생각과 AI 질문·응답을 같은 작업 공간에 배치한다.",
+    "features": "Five Whys에서는 문제와 앞선 답변을 바탕으로 AI가 다음 질문을 만든다. 사용자가 답한 뒤 다음 질문을 요청하는 과정을 다섯 차례 이어가고, 마지막에 원인을 요약한다.",
+    "action": "사용자는 문제와 자신의 답을 보드에 적는다. AI 질문과 원인 요약을 검토하고, 단계마다 수정하거나 받아들이지 않을 수 있다.",
+    "method": "고정된 왜 질문을 반복하는 대신 이전 답변의 부족한 점·예시·다른 해석을 포함한 질문을 제시한다. 다음 단계는 사용자의 응답을 기다리며 진행된다.",
+    "steps": "Five Whys 템플릿의 첫 칸에 문제를 적는다.\nAI가 만든 질문을 읽고 다음 칸에 자신의 생각을 적는다.\nGet Next GPT Prompt로 다음 질문을 요청한다.\n질문과 답을 다섯 차례 이어간다.\nAI의 원인 요약을 검토하고 필요하면 고친다.",
+    "conditions": "논문에서 구현·평가한 연구용 시스템이다. 아래 이용 방법은 논문에 기술된 흐름이며, 일반 사용자가 즉시 설치·가입할 수 있는 배포 서비스와는 구분한다.",
+    "sources": "https://tonexu.com/assets/pdf/jamplate.pdf\nhttps://doi.org/10.1145/3640543.3645196",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "/images/jamplate-five-whys.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://tonexu.com/assets/pdf/jamplate.pdf",
+    "imageCredit": "Xiaotong (Tone) Xu 외 · Jamplate 연구팀",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/jamplate-five-whys.png",
+        "caption": "논문 Figure 3: 문제·AI 질문·사용자 답변을 연결하는 Five Whys 템플릿",
+        "source": "https://tonexu.com/assets/pdf/jamplate.pdf",
+        "credit": "Xiaotong (Tone) Xu 외 · Jamplate 연구팀",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "R11",
+    "title": "LLM-Powered Devil’s Advocate",
+    "kind": "웹사이트 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "LLM-Powered Devil’s Advocate",
+    "environment": "그룹 의사결정 웹 실험 · GPT-3.5 기반 대화 에이전트",
+    "timing": "AI 추천을 받은 그룹이 최종 결정을 논의할 때",
+    "overview": "Purdue University 연구팀이 AI를 활용하는 그룹 의사결정에 악마의 변호사 역할의 LLM을 추가한 연구다. 논문명은 Enhancing AI-Assisted Group Decision Making through LLM-Powered Devil’s Advocate이다.",
+    "features": "AI 추천과 다수 의견 중 무엇에 이의를 제기할지, 시작할 때 질문만 제시할지 토론 중 계속 응답할지를 조합해 네 방식을 비교했다. 실험 과제는 재범 위험 판단이었다.",
+    "action": "참여자는 먼저 판단하고 AI 추천을 본 뒤 다른 참여자와 토론한다. 악마의 변호사의 질문이나 반론에 응답하며 최종 판단을 정한다.",
+    "method": "결정을 추천하는 AI와 추천 근거를 질문하는 대화 AI의 역할을 분리한다. 고정 질문만 제시하는 조건과 토론 내용에 맞춰 응답하는 조건을 구분한 설계다.",
+    "steps": "과제 정보를 읽고 초기 판단을 정한다.\nAI 추천을 확인한다.\n그룹 채팅에서 의견을 논의하고 악마의 변호사의 질문에 응답한다.\n각 참여자가 준비되면 최종 투표를 진행한다.",
+    "conditions": "논문에서 구현·평가한 연구용 시스템이다. 아래 이용 방법은 논문에 기술된 흐름이며, 일반 사용자가 즉시 설치·가입할 수 있는 배포 서비스와는 구분한다.",
+    "sources": "https://mingyin.org/paper/IUI-24/devil.pdf\nhttps://doi.org/10.1145/3640543.3645199",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "/images/devils-advocate-interface.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://mingyin.org/paper/IUI-24/devil.pdf",
+    "imageCredit": "Chun-Wei Chiang · Zhuoran Lu · Zhuoyan Li · Ming Yin",
+    "imageOriginal": "",
+    "gallery": [
+      {
+        "src": "/images/devils-advocate-interface.png",
+        "caption": "논문 Figure 1: 과제·AI 추천·그룹 채팅과 악마의 변호사 예시",
+        "source": "https://mingyin.org/paper/IUI-24/devil.pdf",
+        "credit": "Chun-Wei Chiang · Zhuoran Lu · Zhuoyan Li · Ming Yin",
+        "type": "논문 수록 인터페이스"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문",
+    "limits": ""
+  },
+  {
+    "id": "W04",
+    "title": "Ellipsus",
+    "kind": "웹사이트",
+    "subtitle": "생성형 AI 없이 사람끼리 함께 쓰고 수정하는 글쓰기 서비스",
+    "environment": "웹 브라우저",
+    "timing": "글쓰기·초안 비교·수정 과정",
+    "overview": "Ellipsus는 작가가 직접 글을 쓰고, 공동 저자·편집자·독자 등 다른 사람을 초대해 함께 수정하는 온라인 글쓰기 서비스다. 여기서 공동 집필은 사람과 사람 사이의 협업을 뜻한다.",
+    "features": "초대받은 사람은 같은 초안에서 함께 글을 쓰거나 별도 초안을 만들어 수정 의견을 제안할 수 있다. 댓글로 의견을 주고받고, 작성자는 초안을 나란히 비교해 본문에 반영할 변경을 선택한다. 버전 기록으로 이전 내용을 확인할 수도 있다.",
+    "action": "글을 작성하고 피드백하는 주체는 사람이다. AI가 문장을 생성하거나 공동 저자 역할을 하는 기능을 소개하는 사례가 아니다.",
+    "method": "Ellipsus는 창작자의 목소리와 동의, 저작물 보호를 이유로 생성형 AI를 서비스에 통합하거나 사용하지 않겠다고 밝힌다. AI 사용 도중 질문이나 중단을 넣는 사례와 달리, 글쓰기와 수정 판단을 사람에게 남기기로 한 서비스의 선택을 살펴보기 위해 수집했다.",
+    "steps": "계정을 만들고 직접 글을 쓴다.\n공동 저자·편집자·독자 등 함께 작업할 사람을 초대한다.\n같은 초안에서 함께 쓰거나 별도 초안과 댓글로 의견을 주고받는다.\n작성자가 제안된 변경을 비교하고 본문에 반영할 내용을 선택한다.",
+    "conditions": "계정 가입 후 이용한다. 요금제와 기기별 이용 방식은 공식 안내에서 확인할 수 있다.",
+    "sources": "https://ellipsus.com/generative-ai\nhttps://ellipsus.com/features",
+    "sourceLabel": "Ellipsus 공식 생성형 AI 입장문 · 기능 소개",
+    "image": "/images/ellipsus-editor.png",
+    "imageOriginal": "",
+    "imageSource": "https://ellipsus.com/features",
+    "imageCredit": "Ellipsus · 공식 제품 소개 이미지",
+    "thumbnailOverride": true,
+    "gallery": [
+      {
+        "src": "/images/ellipsus-editor.png",
+        "caption": "Ellipsus의 글쓰기 화면과 테마 예시.",
+        "source": "https://ellipsus.com/features",
+        "credit": "Ellipsus",
+        "type": "공식 제품 이미지"
+      },
+      {
+        "src": "/images/ellipsus-compare.png",
+        "caption": "사람이 작성한 초안과 원문을 비교해 반영할 변경을 검토하는 화면.",
+        "source": "https://ellipsus.com/features",
+        "credit": "Ellipsus",
+        "type": "공식 제품 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "curationVersion": 3,
+    "evidence": "공식 제품 소개 및 생성형 AI 입장문",
+    "classification": "웹사이트",
+    "research": false
+  },
+  {
+    "id": "W05",
+    "title": "DuckDuckGo — Optional AI",
+    "kind": "웹사이트",
+    "subtitle": "AI 답변과 채팅 사용 여부를 선택하는 검색 서비스",
+    "environment": "웹 브라우저 · DuckDuckGo Search",
+    "timing": "검색 시작 전 · 검색 설정 변경 시",
+    "overview": "DuckDuckGo는 AI 답변과 채팅 기능을 제공하면서 사용자가 이를 줄이거나 끌 수 있도록 하는 검색 서비스다. AI 없이 검색하려는 사용자를 위해 noai.duckduckgo.com을 별도로 제공한다.",
+    "features": "Search Settings의 AI Features에서 Duck.ai를 끄고 Search Assist를 Never로 설정할 수 있다. noai.duckduckgo.com으로 검색을 시작하면 AI 답변과 채팅 진입점이 비활성화되고 AI 생성 이미지 필터가 적용된다.",
+    "action": "사용자는 AI 답변을 볼지, 일반 검색 결과를 통해 웹페이지를 직접 찾아볼지 선택한다. 이미지 검색에서도 AI images 필터로 생성형 이미지를 숨길 수 있다.",
+    "method": "매번 응답을 요구하며 사용을 중단시키는 방식이 아니라, 검색 환경에 AI를 어느 정도 포함할지 선택권을 제공한다. 공식 안내는 모든 AI 기능을 선택 사항으로 설명한다.",
+    "steps": "AI 없이 검색하려면 noai.duckduckgo.com으로 접속해 검색어를 입력한다.\n일반 검색에서 설정하려면 Search Settings의 AI Features를 연다.\nDuck.ai를 끄고 Search Assist를 Never로 선택한 뒤 Save and Exit를 누른다.\n이미지 검색에서 AI images를 Hide로 선택하거나 Hide AI-Generated Images를 켠다.",
+    "conditions": "웹 검색은 별도 가입 없이 이용할 수 있다. AI 이미지 필터는 공개 차단 목록을 활용하므로 모든 AI 생성 이미지를 제거하는 것은 아니다.",
+    "sources": "https://duckduckgo.com/duckduckgo-help-pages/ai-features/about-noaiduckduckgocom\nhttps://duckduckgo.com/duckduckgo-help-pages/ai-features/opting-out-of-ai\nhttps://duckduckgo.com/duckduckgo-help-pages/results/how-to-filter-out-ai-images-in-duckduckgo-search-results\nhttps://spreadprivacy.com/ai-feature-upgrade/",
+    "sourceLabel": "DuckDuckGo 공식 도움말 · 공식 블로그",
+    "image": "/images/duckduckgo-ai-settings.jpg",
+    "imageSource": "https://spreadprivacy.com/ai-feature-upgrade/",
+    "imageCredit": "DuckDuckGo · 공식 블로그의 AI 설정 예시",
+    "thumbnailOverride": true,
+    "gallery": [
+      {
+        "src": "/images/duckduckgo-ai-settings.jpg",
+        "caption": "AI 답변의 노출 정도와 채팅 사용 여부를 선택하는 설정 예시. 공식 블로그에 공개된 화면으로 현재 표시명과 다를 수 있다.",
+        "source": "https://spreadprivacy.com/ai-feature-upgrade/",
+        "credit": "DuckDuckGo",
+        "type": "공식 설정 예시"
+      },
+      {
+        "src": "/images/duckduckgo-search-assist.jpg",
+        "caption": "일반 검색 결과와 함께 제공되는 AI 답변 기능의 공식 소개 화면.",
+        "source": "https://spreadprivacy.com/ai-feature-upgrade/",
+        "credit": "DuckDuckGo",
+        "type": "공식 제품 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "curationVersion": 1,
+    "evidence": "공식 도움말 및 제품 소개",
+    "classification": "웹사이트",
+    "research": false
+  },
+  {
+    "id": "W06",
+    "title": "MyThinkTank.AI",
+    "kind": "웹사이트",
+    "subtitle": "여러 AI 관점과 토론하며 자신의 논리를 검토하는 서비스",
+    "environment": "웹 브라우저",
+    "timing": "질문 구체화 · 토론 · 논박 · 종합 단계",
+    "overview": "사용자가 검토할 질문이나 결정을 가져오면, 여러 관점을 가진 AI 인물과 원탁 토론을 진행하는 웹서비스다. 등장하는 전문가와 소크라테스는 실제 사람이 아니라 AI가 구현한 역할이다.",
+    "features": "AI 소크라테스가 진행을 맡아 질문을 구체화하고, 패널의 다른 관점을 논의한 뒤 가정과 반론을 검토하여 내용을 종합한다. 사용자는 자신의 입장을 설명하고 다른 관점에 응답한다.",
+    "action": "공식 소개는 엄격 모드에서 사용자가 자기 입장에 대한 가장 강한 반론을 설명해야 종합 단계로 넘어갈 수 있다고 안내한다. 제시한 반론은 실제 토론 내용과 대조한다고 설명한다.",
+    "method": "대화 중 반론을 제안하는 데 그치지 않고, 반대 입장을 사용자가 직접 설명하는 것을 종합의 조건으로 둔 설계다. 이 조건은 공식 소개에서 확인했으며 실제 세션에서 실행해 검증한 것은 아니다.",
+    "steps": "공식 사이트에서 Start a Roundtable을 선택한다.\n검토할 질문이나 결정을 입력하거나 준비된 토론 주제를 고른다.\nAI 진행자의 질문에 답하며 자신의 입장을 구체화한다.\n여러 AI 관점과 논의하고 반론을 검토한다.\n엄격 모드에서는 자신의 입장에 대한 가장 강한 반론을 직접 설명한 뒤 종합을 진행한다.",
+    "conditions": "공식 사이트는 계정 없이 무료로 시작할 수 있다고 안내한다. 일부 토론 형식과 기능은 요금제에 따라 다르다. 추가 의사결정 점수표와 진행자 자체 점검은 시험 중인 기능으로 소개되므로 현재 기능과 구분한다.",
+    "sources": "https://app.mythinktank.ai/\nhttps://app.mythinktank.ai/about\nhttps://app.mythinktank.ai/pricing",
+    "sourceLabel": "MyThinkTank.AI 공식 기능 소개 · 서비스 설명",
+    "image": "/images/mythinktank-welcome.png",
+    "imageSource": "https://app.mythinktank.ai/",
+    "imageOriginal": "https://app.mythinktank.ai/images/screenshot-welcome.png",
+    "imageCredit": "MyThinkTank.AI · 공식 소개 화면",
+    "thumbnailOverride": true,
+    "gallery": [
+      {
+        "src": "/images/mythinktank-welcome.png",
+        "caption": "질문 입력과 준비된 원탁 토론 주제를 보여주는 공식 시작 화면.",
+        "source": "https://app.mythinktank.ai/",
+        "credit": "MyThinkTank.AI",
+        "type": "공식 제품 이미지"
+      },
+      {
+        "src": "/images/mythinktank-discussion.png",
+        "caption": "AI 도입을 주제로 서로 다른 역할의 AI 패널과 논의하는 공식 예시 화면.",
+        "source": "https://app.mythinktank.ai/",
+        "credit": "MyThinkTank.AI",
+        "type": "공식 제품 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "curationVersion": 1,
+    "evidence": "공식 소개 페이지",
+    "classification": "웹사이트",
+    "research": false
+  },
+  {
+    "id": "W07",
+    "title": "How Normal Am I?",
+    "kind": "아트 · 인터랙티브 다큐멘터리",
+    "subtitle": "얼굴이 알고리즘의 평가 대상이 되는 웹 체험",
+    "environment": "웹 브라우저 · 카메라",
+    "timing": "얼굴 평가와 해설을 함께 경험하는 동안",
+    "overview": "Tijmen Schep이 제작한 인터랙티브 다큐멘터리다. 사용자의 얼굴을 카메라로 인식해 외모 점수와 나이 등 알고리즘이 산출한 평가를 보여주며, 이러한 분류가 어떻게 만들어지고 사용되는지 설명한다. 공식 사이트가 아트 프로젝트로 명시하여 Art로 분류했다.",
+    "features": "사용자는 타인을 평가하는 AI를 구경하는 대신 자신이 평가받는 당사자가 된다. 제작자는 얼굴 각도나 조명, 표정에 따라 결과가 달라질 수 있음을 보여주며 평가 기준과 신뢰성을 문제 삼는다.",
+    "action": "화면의 추정 결과와 설명을 함께 보고, 알고리즘의 평가를 자신의 경험과 대조한다. 체험 마지막에는 익명 통계를 평균 비교에 제공할지 선택할 수 있다.",
+    "method": "사용 흐름을 잠그는 기능보다 자신의 얼굴에 부여된 점수를 접하는 상황을 만드는 사례다. 얼굴 점수에 대한 반응을 통해 평가 방식 자체를 살펴볼 수 있는 설계로 검토한다.",
+    "steps": "공식 웹사이트에서 이용 안내를 읽는다.\n체험을 원하면 카메라 접근을 허용하고 시작한다.\n얼굴을 비추며 평가 화면과 알고리즘에 관한 해설을 확인한다.\n얼굴의 방향이나 표정에 따라 달라지는 결과를 살펴본다.\n마지막에 익명 통계를 평균 계산에 제공할지 선택한다.",
+    "conditions": "카메라가 필요하다. 제작자는 얼굴 분석이 기기 내 브라우저에서 수행되며 개인 데이터를 서버로 보내지 않는다고 안내한다. 기대수명 표시는 머신러닝 예측이 아니라 국가별 표와 BMI 관련 계산을 이용한 구현이다.",
+    "sources": "https://www.hownormalami.eu/\nhttps://www.hownormalami.eu/press/\nhttps://www.tijmenschep.com/how-normal-am-i/",
+    "sourceLabel": "공식 체험 · 제작자 보도자료 · 작품 소개",
+    "image": "/images/hownormal-cover.jpg",
+    "imageSource": "https://www.hownormalami.eu/press/",
+    "imageOriginal": "https://www.hownormalami.eu/press/hownormalami.jpg",
+    "imageCredit": "Tijmen Schep · 제작자 제공 홍보 이미지",
+    "thumbnailOverride": true,
+    "gallery": [
+      {
+        "src": "/images/hownormal-cover.jpg",
+        "caption": "제작자가 제공한 How Normal Am I? 홍보 이미지.",
+        "source": "https://www.hownormalami.eu/press/",
+        "credit": "Tijmen Schep",
+        "type": "공식 홍보 이미지"
+      },
+      {
+        "src": "/images/hownormal-demo.png",
+        "caption": "제작자 보도자료에 공개된 체험 예시. 아카이브 사용자의 얼굴을 분석한 화면이 아니다.",
+        "source": "https://www.hownormalami.eu/press/",
+        "credit": "Tijmen Schep",
+        "type": "제작자 제공 예시"
+      },
+      {
+        "src": "/images/hownormal-bmi.jpg",
+        "caption": "눈썹을 움직이는 등 표정의 변화에 따라 BMI 추정치가 달라지는 예시.",
+        "source": "https://www.hownormalami.eu/press/",
+        "credit": "Tijmen Schep",
+        "type": "제작자 제공 예시"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "curationVersion": 1,
+    "evidence": "공식 작품 소개 및 모델 출처 설명",
+    "classification": "Art",
+    "research": false
+  },
+  {
+    "id": "R12",
+    "title": "CritiqueCrew",
+    "kind": "플러그인 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "Figma 안에서 여러 관점의 디자인 비평을 비교한다",
+    "environment": "Figma Design 플러그인 · 언어모델",
+    "timing": "디자인 시안을 검토하고 수정할 때",
+    "overview": "디자인 시안을 UX·제품 목표·개발 가능성의 세 관점에서 검토하는 AI 기반 Figma 연구 플러그인이다. 실제 전문가가 접속하는 서비스가 아니라, AI가 역할별 의견을 생성한다.",
+    "features": "프레임과 제품 목표 등을 입력하면 AI가 비평을 묶어 보여준다. 의견이 충돌하면 한쪽을 정답으로 정하지 않고 선택의 쟁점을 제시한다.",
+    "action": "디자이너는 비평에 질문을 덧붙이고 판단 근거를 비교한다. 제안된 변경을 캔버스에서 미리 본 뒤 적용할 수 있다.",
+    "method": "예를 들어 버튼을 눈에 띄게 만드는 제안과 접근성 기준이 충돌할 때, 두 요구를 함께 보여주고 디자이너가 결정하게 한다. 수정 적용은 사용자 선택이다.",
+    "steps": "Figma에서 검토할 프레임을 선택한다.\n제품 목표·브랜드 키워드 등 디자인 맥락을 입력한다.\nAI가 정리한 쟁점과 역할별 의견을 확인한다.\n판단 근거를 질문하고 대안을 비교한다.\n변경을 미리 보고 적용 여부를 결정한다.",
+    "conditions": "논문에서 구현·평가한 연구용 플러그인이다. 일반 사용자가 설치할 수 있는 공개 배포 경로는 확인되지 않았다. 위 이용 방법은 논문의 인터페이스 흐름이다.",
+    "reviewStatus": "연구 참여 규모",
+    "reviewText": "평가 연구 두 건에 전문 UI 디자이너가 각각 24명씩, 총 48명 참여했다. 두 연구의 참여자는 겹치지 않는다. 이는 실험 참여자 수이며, 다운로드 수·활성 이용자 수·지속 사용률은 공개 자료에서 확인되지 않았다. 수치 확인: 2026.11.15.",
+    "sources": "https://arxiv.org/html/2602.01796v1\nhttps://doi.org/10.1145/3772318.3791391",
+    "sourceLabel": "연구 논문 · 구현 인터페이스",
+    "image": "https://arxiv.org/html/2602.01796v1/pic/teaser.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2602.01796v1",
+    "imageCredit": "Xiaojiao Chen 외 · CritiqueCrew 연구팀 · CC BY 4.0",
+    "imageOriginal": "https://arxiv.org/html/2602.01796v1/pic/teaser.png",
+    "gallery": [
+      {
+        "src": "https://arxiv.org/html/2602.01796v1/pic/teaser.png",
+        "caption": "Figure 1 · 프레임 선택부터 비평 검토와 수정까지의 전체 흐름",
+        "source": "https://arxiv.org/html/2602.01796v1",
+        "credit": "Xiaojiao Chen 외 · CritiqueCrew 연구팀 · CC BY 4.0",
+        "type": "논문 수록 화면"
+      },
+      {
+        "src": "https://arxiv.org/html/2602.01796v1/pic/Interaction.png",
+        "caption": "Figure 4 · 검토 맥락 입력, 역할별 비평 대화, 수정 미리보기",
+        "source": "https://arxiv.org/html/2602.01796v1",
+        "credit": "Xiaojiao Chen 외 · CritiqueCrew 연구팀 · CC BY 4.0",
+        "type": "논문 수록 화면"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "연구 사례 · 제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "연구 논문 · 독립된 평가 연구 2건, 총 48명",
+    "limits": ""
+  },
+  {
+    "id": "G02",
+    "title": "AI Quests",
+    "kind": "시리어스 게임",
+    "research": false,
+    "subtitle": "데이터 선택부터 AI의 결과까지 직접 시험하는 게임",
+    "environment": "브라우저 · 공개 교육 게임",
+    "timing": "게임 플레이 중 선택과 결과를 비교할 때",
+    "overview": "Google Research와 Stanford Accelerator for Learning이 함께 만든 웹 기반 AI 학습 게임이다. 2025년 9월 공개됐으며 청소년이 AI 연구자의 역할을 경험하도록 구성했다.",
+    "features": "홍수 예측과 실명 예방 과제를 통해 데이터를 모으고 고르고 정리한 뒤 모델을 훈련하고 시험한다.",
+    "action": "플레이어는 자신의 선택이 결과에 미친 영향을 확인하고 접근을 수정한다.",
+    "method": "설명을 읽고 정답을 고르는 데 그치지 않고 데이터와 모델 개발 과정의 선택을 다룬다.",
+    "steps": "공식 게임 페이지에 접속한다.\n문제 상황과 목표를 확인한다.\n데이터를 수집·선택·정리한다.\n모델을 훈련하고 시험한다.\n선택과 결과를 비교하며 접근을 수정한다.",
+    "conditions": "무료 공개 웹 게임이다. 공식 페이지에서 시작할 수 있다. 게임의 학습 활동을 실제 연구용 AI 개발 전체 과정과 동일하게 보지는 않는다.",
+    "sources": "https://research.google/ai-quests/intl/en_us\nhttps://news.stanford.edu/stories/2025/09/stanford-google-ai-quests-educational-game",
+    "sourceLabel": "제작자 공개 자료 · 연구 원문",
+    "image": "https://news.stanford.edu/__data/assets/image/0026/175724/Screenshot-2025-09-03-at-3.39.02-PM-1024x582.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://research.google/ai-quests/intl/en_us",
+    "imageCredit": "Google Research · Stanford Report",
+    "imageOriginal": "https://news.stanford.edu/__data/assets/image/0026/175724/Screenshot-2025-09-03-at-3.39.02-PM-1024x582.png",
+    "gallery": [
+      {
+        "src": "https://news.stanford.edu/__data/assets/image/0026/175724/Screenshot-2025-09-03-at-3.39.02-PM-1024x582.png",
+        "caption": "AI Quests의 게임 화면 · Stanford 공식 소개 수록",
+        "credit": "Google Research · Stanford Report",
+        "source": "https://research.google/ai-quests/intl/en_us",
+        "type": "제작자 공개 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "2025년 공개 자료",
+    "limits": ""
+  },
+  {
+    "id": "R13",
+    "title": "Case 429",
+    "kind": "시리어스 게임 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "AI의 판단 오류를 찾아 사건을 해결하는 추리 게임",
+    "environment": "브라우저 · 연구용 게임",
+    "timing": "게임 플레이 중 선택과 결과를 비교할 때",
+    "overview": "AI 판단의 편향을 다루는 살인사건 추리 연구 게임이다. Pragati Maheshwary 외 연구팀이 CHI PLAY 2025에서 발표했다.",
+    "features": "플레이어는 Watson이다. 경찰은 새로운 AI 도구를 근거로 한 여성을 체포하지만 Sherlock은 그 판단을 의심한다.",
+    "action": "AI의 잘못된 판단을 찾아 실제 범인을 추적한다. 요약·정보 검색의 유용성과 복잡한 추론의 한계를 사건 속에서 다룬다.",
+    "method": "AI의 설명을 사건 해결의 정답으로 받아들이기보다 의심하고 확인하도록 구성했다. 실시간 LLM 호출 여부는 공개 소개만으로 확인되지 않았다.",
+    "steps": "제작자 소개에서 게임의 설정과 플레이 링크를 확인한다.\nWatson 역할로 사건을 살펴본다.\nAI 판단의 오류를 찾아 실제 범인을 추적한다.",
+    "conditions": "연구용 구현이다. 공동저자 게시물에 플레이 링크가 있으나 현재 실행 가능 여부는 확인되지 않았다. 아래 이미지는 실제 게임 화면이 아니라 아카이브에서 만든 개념 도식이다.",
+    "sources": "https://www.linkedin.com/posts/aarnav-sangekar_chiplay-hci-gamedesign-activity-7384622909916405760-VK1D\nhttps://doi.org/10.1145/3744736.3749366\nhttps://edpsych.education.wisc.edu/fac-staff/maheshwary-pragati/",
+    "sourceLabel": "제작자 공개 자료 · 연구 원문",
+    "image": "/images/case-429-diagram.svg",
+    "thumbnailOverride": true,
+    "imageSource": "https://www.linkedin.com/posts/aarnav-sangekar_chiplay-hci-gamedesign-activity-7384622909916405760-VK1D",
+    "imageCredit": "Reflective Friction · 제작자 소개를 바탕으로 제작",
+    "imageOriginal": "/images/case-429-diagram.svg",
+    "gallery": [
+      {
+        "src": "/images/case-429-diagram.svg",
+        "caption": "AI의 체포 판단을 의심하고 오류를 추적하는 설정 · 실제 화면 아님",
+        "credit": "Reflective Friction · 제작자 소개를 바탕으로 제작",
+        "source": "https://www.linkedin.com/posts/aarnav-sangekar_chiplay-hci-gamedesign-activity-7384622909916405760-VK1D",
+        "type": "아카이브 제작 도식"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "2025년 공개 자료",
+    "limits": ""
+  },
+  {
+    "id": "R14",
+    "title": "Breakable Machine",
+    "kind": "시리어스 게임 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "영상 분류기를 직접 속이고 판단 근거를 살펴보는 게임",
+    "environment": "브라우저 · 연구용 게임",
+    "timing": "게임 플레이 중 선택과 결과를 비교할 때",
+    "overview": "웹캠 영상 분류기의 오류를 직접 만들어 보는 교실용 AI 리터러시 게임이다. Olli Hilke 외 연구팀이 2025년 8월 설계를 공개했다.",
+    "features": "옷·소품·배경·조명을 바꿔 분류기가 목표 라벨을 높은 확신도로 출력하게 한다. 교실 순위판에서 전략을 비교한다.",
+    "action": "교사는 히트맵과 학습 데이터 탐색을 열어 모델이 어떤 단서를 사용했는지 함께 살펴보게 한다.",
+    "method": "모델을 만드는 대신 모델의 실패를 만드는 활동이다. 입력 변경, 오분류, 판단 근거 탐색이 이어진다.",
+    "steps": "교사가 게임 세션을 준비한다.\n학생이 브라우저와 웹캠으로 참여한다.\n외모·소품·환경을 바꿔 분류기의 반응을 시험한다.\n확신도와 교실 순위판을 확인한다.\n교사가 연 히트맵·학습 자료를 살펴보고 전략을 비교한다.",
+    "conditions": "교사·학생 브라우저 앱과 웹캠이 필요한 연구용 게임이다. 논문은 게임과 코드의 무료 공개를 명시하지만 직접 실행 경로는 추가 확인이 필요하다. 해당 논문은 설계·기술 설명이며 학습 효과 평가를 완료한 보고서는 아니다.",
+    "sources": "https://arxiv.org/html/2508.14201v1",
+    "sourceLabel": "제작자 공개 자료 · 연구 원문",
+    "image": "https://arxiv.org/html/2508.14201v1/pics/spoofingapp4.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2508.14201v1",
+    "imageCredit": "Olli Hilke 외 · CC BY 4.0",
+    "imageOriginal": "https://arxiv.org/html/2508.14201v1/pics/spoofingapp4.png",
+    "gallery": [
+      {
+        "src": "https://arxiv.org/html/2508.14201v1/pics/spoofingapp4.png",
+        "caption": "입력을 바꾸며 분류 결과를 시험하는 인터페이스",
+        "credit": "Olli Hilke 외 · CC BY 4.0",
+        "source": "https://arxiv.org/html/2508.14201v1",
+        "type": "제작자 공개 이미지"
+      },
+      {
+        "src": "https://arxiv.org/html/2508.14201v1/pics/heatmap3.png",
+        "caption": "모델이 주목한 이미지 영역을 살펴보는 히트맵",
+        "credit": "Olli Hilke 외 · CC BY 4.0",
+        "source": "https://arxiv.org/html/2508.14201v1",
+        "type": "제작자 공개 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "2025년 공개 자료",
+    "limits": ""
+  },
+  {
+    "id": "R15",
+    "title": "ImaginAItion",
+    "kind": "시리어스 게임 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "짧은 프롬프트로 이미지를 재현하고 해석 차이를 비교하는 게임",
+    "environment": "브라우저 · 연구용 게임",
+    "timing": "게임 플레이 중 선택과 결과를 비교할 때",
+    "overview": "생성 AI로 목표 이미지를 재현하는 다인 파티게임 연구 시스템이다. 2025년 초기 버전과 확장 연구가 발표됐다.",
+    "features": "플레이어는 적은 단어로 목표와 비슷한 이미지를 만든다. 다른 사람들이 유사성을 투표한 뒤 프롬프트·이미지·점수를 함께 확인한다.",
+    "action": "자신이 생략한 설명을 AI가 무엇으로 채웠는지, 같은 이미지를 사람들이 어떻게 다르게 판단했는지 비교한다. 다른 프롬프트도 시험할 수 있다.",
+    "method": "실제 이미지 생성 결과를 경쟁과 토론의 재료로 쓴다. 긴 프롬프트에 불이익을 주는 규칙이 모델의 기본값을 드러내도록 설계했다.",
+    "steps": "공개 코드의 실행 환경과 API 키를 준비한다.\n목표 이미지를 확인하고 짧은 프롬프트를 작성한다.\n생성된 이미지의 유사성을 서로 투표한다.\n공개된 프롬프트·이미지·점수를 비교한다.\n대안 프롬프트를 시험하고 해석 차이를 이야기한다.",
+    "conditions": "공개 코드와 데모 영상이 있는 연구 게임이다. 저장소는 자신의 API 키를 요구하며 API 이용 비용이 발생할 수 있다. 여기서는 2025년 확장 연구의 규칙을 설명한다.",
+    "sources": "https://arxiv.org/html/2509.13679v1\nhttps://github.com/mqo00/ImaginAItion\nhttps://youtu.be/lwJjuG_eiyc",
+    "sourceLabel": "제작자 공개 자료 · 연구 원문",
+    "image": "https://arxiv.org/html/2509.13679v1/1_draw.png",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2509.13679v1",
+    "imageCredit": "ImaginAItion 연구팀 · 논문 Figure 1",
+    "imageOriginal": "https://arxiv.org/html/2509.13679v1/1_draw.png",
+    "gallery": [
+      {
+        "src": "https://arxiv.org/html/2509.13679v1/1_draw.png",
+        "caption": "목표 이미지를 보고 프롬프트를 작성하는 화면",
+        "credit": "ImaginAItion 연구팀 · 논문 Figure 1",
+        "source": "https://arxiv.org/html/2509.13679v1",
+        "type": "제작자 공개 이미지"
+      },
+      {
+        "src": "https://arxiv.org/html/2509.13679v1/3_reveal.png",
+        "caption": "입력과 생성 결과를 공개해 비교하는 화면",
+        "credit": "ImaginAItion 연구팀 · 논문 Figure 1",
+        "source": "https://arxiv.org/html/2509.13679v1",
+        "type": "제작자 공개 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "2025년 공개 자료",
+    "limits": ""
+  },
+  {
+    "id": "R16",
+    "title": "Breaking the News",
+    "kind": "시리어스 게임 · 연구 프로토타입",
+    "research": true,
+    "subtitle": "허위정보 작성자와 반박자가 AI 가상 인물의 반응을 비교하는 게임",
+    "environment": "브라우저 · 연구용 게임",
+    "timing": "게임 플레이 중 선택과 결과를 비교할 때",
+    "overview": "두 사람이 인플루언서와 기자 역할로 경쟁하는 LLM 기반 연구 게임이다. 2025년 공개 연구에서 구현과 플레이 과정을 소개한다.",
+    "features": "한 사람은 허위정보를 만들고 다른 사람은 반박 메시지를 쓴다. GPT-4o가 다섯 가상 인물의 반응과 신뢰도 점수를 생성한다.",
+    "action": "플레이어는 메시지에 대한 서로 다른 반응을 읽고 다음 주장을 작성한다. 허위정보를 만드는 방식과 반박 전략을 양쪽 역할에서 경험한다.",
+    "method": "AI는 개발 도구에 머물지 않고 플레이 중 가상 수용자의 반응을 만든다. 이 점수는 실제 사람의 여론이나 주장의 사실성을 측정한 값은 아니다.",
+    "steps": "두 플레이어가 인플루언서와 기자 역할을 맡는다.\n가상의 보건·의료 사건을 확인한다.\n각자 허위정보 또는 반박 메시지를 작성한다.\n다섯 AI 가상 인물의 반응과 신뢰도 변화를 읽는다.\n다음 라운드에서 메시지와 전략을 바꾼다.",
+    "conditions": "Unity·Photon과 LLM을 결합한 연구용 구현이다. 일반 사용자가 즉시 접속할 공개 플레이 주소는 확인되지 않았다. 게임의 보건·의료 상황은 가상 설정이다.",
+    "sources": "https://arxiv.org/html/2502.04931v1",
+    "sourceLabel": "제작자 공개 자료 · 연구 원문",
+    "image": "https://arxiv.org/html/2502.04931v1/figs/abstract_RR.jpg",
+    "thumbnailOverride": true,
+    "imageSource": "https://arxiv.org/html/2502.04931v1",
+    "imageCredit": "Huiyun Tang 외 · Breaking the News 논문 Figure 1",
+    "imageOriginal": "https://arxiv.org/html/2502.04931v1/figs/abstract_RR.jpg",
+    "gallery": [
+      {
+        "src": "https://arxiv.org/html/2502.04931v1/figs/abstract_RR.jpg",
+        "caption": "두 플레이어와 다섯 LLM 가상 인물로 이루어진 게임 구조",
+        "credit": "Huiyun Tang 외 · Breaking the News 논문 Figure 1",
+        "source": "https://arxiv.org/html/2502.04931v1",
+        "type": "제작자 공개 이미지"
+      }
+    ],
+    "purposes": [],
+    "ways": [],
+    "note": "",
+    "professorNote": "",
+    "youngchanNote": "",
+    "jungwooNote": "",
+    "classification": "제공 형태 기준 분류",
+    "curationVersion": 1,
+    "evidence": "2025년 공개 자료",
+    "limits": ""
+  }
+]

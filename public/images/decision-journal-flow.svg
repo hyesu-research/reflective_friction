@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Decision Journal — 작동 흐름도</title><desc id="desc">복사 시도, 안내와 사용자 응답 및 피드백, 복사 재개의 순서를 나타낸 문서 기반 도식. 실제 제품 화면이 아님.</desc>
+<rect width="1200" height="800" fill="#f1f1ee"/>
+<g font-family="Arial, sans-serif" fill="#171717">
+<text x="70" y="130" font-size="57" font-weight="500" letter-spacing="-2">Decision Journal</text>
+<path d="M70 175H1130" stroke="#c9c9c6"/>
+<rect x="70" y="300" width="230" height="170" fill="#fff" stroke="#171717" stroke-width="2"/>
+<text x="185" y="400" text-anchor="middle" font-size="36">상황 설명</text>
+<path d="M320 385H385m-17-16 17 16-17 16" fill="none" stroke="#171717" stroke-width="3"/>
+<rect x="405" y="265" width="390" height="240" fill="#171717"/>
+<text x="600" y="360" text-anchor="middle" font-size="43" fill="#fff">질문과 답변</text>
+<text x="600" y="417" text-anchor="middle" font-size="25" fill="#fff">선택지 · 예상 · 판단 근거</text>
+<path d="M815 385H880m-17-16 17 16-17 16" fill="none" stroke="#171717" stroke-width="3"/>
+<rect x="900" y="300" width="230" height="170" fill="#fff" stroke="#171717" stroke-width="2"/>
+<text x="1015" y="400" text-anchor="middle" font-size="36">판단 기록</text>
+<path d="M70 655H1130" stroke="#c9c9c6"/>
+<text x="70" y="714" font-size="24">Flow diagram · Based on the source prompt</text>
+</g></svg>

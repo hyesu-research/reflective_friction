@@ -1,0 +1,7 @@
+Stop Claude from Always Agreeing with You
+Brandon Gaille · 공개 글의 핵심 한 문장
+Source: https://aigeniuslab.substack.com/p/stop-claude-from-always-agreeing
+
+--- PROMPT ---
+
+Be my sparring partner. Identify my blind spots, risks, and assumptions.

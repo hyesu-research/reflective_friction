@@ -1,0 +1,65 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/archive.js": {
+      "includeFiles": "dist/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/collaboration",
+      "dest": "/api/collaboration.js"
+    },
+    {
+      "src": "/api/cases",
+      "dest": "/api/cases.js"
+    },
+    {
+      "src": "/api/media",
+      "dest": "/api/media.js"
+    },
+    {
+      "src": "/api/hearts",
+      "dest": "/api/hearts.js"
+    },
+    {
+      "src": "/api/notes",
+      "dest": "/api/notes.js"
+    },
+    {
+      "src": "/api/access",
+      "dest": "/api/access.js"
+    },
+    {
+      "src": "/api/archive",
+      "dest": "/api/archive.js"
+    },
+    {
+      "src": "/assets/(public-[^/]+)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/login/?",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/archive/?",
+      "dest": "/api/archive.js?file=index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/archive.js?file=$1"
+    }
+  ]
+}

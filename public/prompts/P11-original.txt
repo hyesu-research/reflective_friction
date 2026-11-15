@@ -1,0 +1,7 @@
+Ask Before Answering
+UK AI Knowledge Hub · Experimenting with prompts의 짧은 예시 문구
+Source: https://knowledgehub.dev.ai.gov.uk/how-to/experiment-with-prompts
+
+--- PROMPT ---
+
+before you answer, ask me three questions to make sure you understand what I need
