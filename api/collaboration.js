@@ -1,4 +1,4 @@
-import * as blob from '@vercel/blob';
+import * as blob from '../lib/storage.js';
 import {activeEntry,getAccessSession,privateHeaders} from '../lib/archive-access.js';
 import {createCasesStore} from '../lib/cases-store.js';
 import {createHeartsStore} from '../lib/hearts-store.js';

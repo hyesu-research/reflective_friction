@@ -1,4 +1,4 @@
-import * as blob from '@vercel/blob';
+import * as blob from '../lib/storage.js';
 import { activeEntry, getAccessSession, privateHeaders, sameOrigin } from '../lib/archive-access.js';
 import { createNotesStore, NOTE_FIELDS, NoteConflict } from '../lib/notes-store.js';
 const store = createNotesStore(blob);

@@ -1,3 +1,4 @@
+import {isSyncActive} from './sync-activity';
 import React,{useState,useRef,useEffect,useCallback} from 'react';
 import ResearcherName,{ResearcherNames} from './ResearcherName';
 export const RESEARCHERS=['윤재영','김혜수','박영찬','배정우'];
@@ -6,7 +7,7 @@ export function useHearts(){
  const [likes,setLikes]=useState({}),[researcher,setResearcher]=useState(()=>{try{const name=localStorage.getItem(identityKey);return RESEARCHERS.includes(name)?name:''}catch{return ''}});
  const [ready,setReady]=useState(false),[error,setError]=useState(''),[choosing,setChoosing]=useState(false),[busy,setBusy]=useState({});
  const pending=useRef(null),writes=useRef(new Set()),version=useRef(0),writeFailed=useRef(false),likesRef=useRef(likes);likesRef.current=likes;
- useEffect(()=>{let stopped=false,reading=false;async function load(){if(reading||document.hidden)return;reading=true;const v=version.current;try{const r=await fetch('/api/hearts',{cache:'no-store'});const data=await r.json();if(!r.ok)throw Error(data.error);if(!stopped&&v===version.current&&writes.current.size===0){setLikes(data.likes);setReady(true);if(!writeFailed.current)setError('')}}catch(e){if(!stopped)setError(e.message||'하트를 불러오지 못했습니다.')}finally{reading=false}}load();const timer=setInterval(load,5000);window.addEventListener('focus',load);document.addEventListener('visibilitychange',load);return()=>{stopped=true;clearInterval(timer);window.removeEventListener('focus',load);document.removeEventListener('visibilitychange',load)}},[]);
+ useEffect(()=>{let stopped=false,reading=false;async function load(){if(reading||document.hidden||!isSyncActive())return;reading=true;const v=version.current;try{const r=await fetch('/api/hearts',{cache:'no-store'});const data=await r.json();if(!r.ok)throw Error(data.error);if(!stopped&&v===version.current&&writes.current.size===0){setLikes(data.likes);setReady(true);if(!writeFailed.current)setError('')}}catch(e){if(!stopped)setError(e.message||'하트를 불러오지 못했습니다.')}finally{reading=false}}load();const timer=setInterval(load,120000);window.addEventListener('focus',load);document.addEventListener('visibilitychange',load);return()=>{stopped=true;clearInterval(timer);window.removeEventListener('focus',load);document.removeEventListener('visibilitychange',load)}},[]);
  const write=useCallback(async(caseId,name)=>{
   if(writes.current.has(caseId))return;
   const liked=!(likesRef.current[caseId]||[]).includes(name);writes.current.add(caseId);version.current++;setBusy(s=>({...s,[caseId]:true}));writeFailed.current=false;setError('');

@@ -1,5 +1,5 @@
 import {createHash} from 'node:crypto';
-import {get,put} from '@vercel/blob';
+import {get,put} from '../lib/storage.js';
 import {activeEntry,getAccessSession,privateHeaders,sameOrigin} from '../lib/archive-access.js';
 export default async function handler(req,res){
  privateHeaders(res);

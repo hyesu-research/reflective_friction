@@ -1,4 +1,4 @@
-import * as blob from '@vercel/blob';
+import * as blob from '../lib/storage.js';
 import {activeEntry,getAccessSession,privateHeaders,sameOrigin} from '../lib/archive-access.js';
 import {createCasesStore,sanitizeCase,CaseConflict} from '../lib/cases-store.js';
 const store=createCasesStore(blob);
