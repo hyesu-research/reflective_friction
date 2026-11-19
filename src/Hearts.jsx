@@ -5,9 +5,9 @@ export const RESEARCHERS=['윤재영','김혜수','박영찬','배정우'];
 const identityKey='reflective-researcher-name';
 export function useHearts(){
  const [likes,setLikes]=useState({}),[researcher,setResearcher]=useState(()=>{try{const name=localStorage.getItem(identityKey);return RESEARCHERS.includes(name)?name:''}catch{return ''}});
- const [ready,setReady]=useState(false),[error,setError]=useState(''),[choosing,setChoosing]=useState(false),[busy,setBusy]=useState({});
+ const [ready,setReady]=useState(false),[error,setError]=useState(''),[choosing,setChoosing]=useState(false),[busy,setBusy]=useState({}),[reload,setReload]=useState(0);
  const pending=useRef(null),writes=useRef(new Set()),version=useRef(0),writeFailed=useRef(false),likesRef=useRef(likes);likesRef.current=likes;
- useEffect(()=>{let stopped=false,reading=false;async function load(){if(reading||document.hidden||!isSyncActive())return;reading=true;const v=version.current;try{const r=await fetch('/api/hearts',{cache:'no-store'});const data=await r.json();if(!r.ok)throw Error(data.error);if(!stopped&&v===version.current&&writes.current.size===0){setLikes(data.likes);setReady(true);if(!writeFailed.current)setError('')}}catch(e){if(!stopped)setError(e.message||'하트를 불러오지 못했습니다.')}finally{reading=false}}load();const timer=setInterval(load,120000);window.addEventListener('focus',load);document.addEventListener('visibilitychange',load);return()=>{stopped=true;clearInterval(timer);window.removeEventListener('focus',load);document.removeEventListener('visibilitychange',load)}},[]);
+ useEffect(()=>{let stopped=false,reading=false,controller;async function load(){if(reading||document.hidden||!isSyncActive())return;reading=true;controller=new AbortController();const v=version.current;const timeout=setTimeout(()=>controller.abort(),15000);try{const r=await fetch('/api/hearts',{cache:'no-store',signal:controller.signal});const data=await r.json();if(!r.ok)throw Error(data.error);if(!stopped&&v===version.current&&writes.current.size===0){setLikes(data.likes);setReady(true);if(!writeFailed.current)setError('')}}catch(e){if(!stopped)setError(e.name==='AbortError'?'하트를 불러오는 데 시간이 걸립니다. 다시 시도해주세요.':e.message||'하트를 불러오지 못했습니다.')}finally{clearTimeout(timeout);reading=false}}load();const timer=setInterval(load,120000);window.addEventListener('focus',load);window.addEventListener('online',load);document.addEventListener('visibilitychange',load);return()=>{stopped=true;controller?.abort();clearInterval(timer);window.removeEventListener('focus',load);window.removeEventListener('online',load);document.removeEventListener('visibilitychange',load)}},[reload]);
  const write=useCallback(async(caseId,name)=>{
   if(writes.current.has(caseId))return;
   const liked=!(likesRef.current[caseId]||[]).includes(name);writes.current.add(caseId);version.current++;setBusy(s=>({...s,[caseId]:true}));writeFailed.current=false;setError('');
@@ -21,7 +21,8 @@ export function useHearts(){
  function choose(name){setResearcher(name);try{localStorage.setItem(identityKey,name)}catch{}setChoosing(false);if(pending.current){const id=pending.current;pending.current=null;write(id,name)}}
  function changeResearcher(){pending.current=null;setChoosing(true)}
  function close(){pending.current=null;setChoosing(false)}
- return {likes,researcher,ready,error,choosing,busy,toggle,choose,changeResearcher,close};
+ function retry(){writeFailed.current=false;setReload(n=>n+1)}
+ return {likes,researcher,ready,error,choosing,busy,toggle,choose,changeResearcher,close,retry};
 }
 export function ResearcherPicker({open,onChoose,onClose}){
  const dialog=useRef(null);

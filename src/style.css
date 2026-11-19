@@ -90,6 +90,7 @@ header{height:58px;margin:0 16px;border-bottom:1px solid #dedede;gap:16px}.brand
 .card-hearts .heart-members>summary{display:block;margin:0;padding:0;border:0;font-size:12px;line-height:22px;min-height:22px}
 .card-title-row{min-height:24px;align-items:flex-start}
 .card-hearts{padding-top:0;height:24px;align-items:center}
+.hearts-retry{padding:2px 6px;text-decoration:underline;text-underline-offset:3px;color:#111}
 .card-body>.card-type{margin-top:4px}
 .archive-controls.chip-filters.single-row-filters{flex-direction:row;flex-wrap:nowrap;align-items:center}
 @media(max-width:540px){.card-hearts .heart-members>summary{font-size:11px}.card-body>.card-type{margin-top:3px}}

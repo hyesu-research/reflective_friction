@@ -1,6 +1,6 @@
 # Shared archive data
 
-Cases, researcher notes and hearts are stored in the connected private Vercel Blob store. All API routes require the existing archive session; writes require a matching Origin.
+Cases, researcher notes, hearts and uploaded media are stored in the connected Neon database through the private archive APIs. All API routes require the existing archive session; writes require a matching Origin. The previous Vercel Blob store is retained only for pending recovery.
 
 - `/api/cases`: GET shared case records; PUT `{item, revision}`. A case record has `item`, a UUID revision and `updatedAt`. Conflicting edits return 409 and preserve the form.
 - `/api/media`: POST a supported raster image data URL (1.5 MB maximum per image); GET uploaded media by SHA-256 filename. Images remain behind archive login.
@@ -20,6 +20,8 @@ Research Perspectives displays selected cases, category counts and shared select
 Vercel 사이트와 로그인은 유지하고 공동 사례·하트·노트·신규 업로드 이미지는 Neon Free의 `archive_documents` 테이블에 저장한다. `DATABASE_URL`은 Vercel 통합이 설정한 서버 전용 값이다. JSON의 데이터와 버전을 한 쿼리로 읽고, UPDATE의 버전 조건으로 동시 수정 손실을 막는다. 이미지도 비공개 API를 거쳐 제공한다.
 
 이전 Blob 저장소(`reflective-friction-notes`)는 무료 조회 한도 초과로 일시 중지되어 있다. 원본 파일을 삭제하거나 빈 데이터로 덮어쓰지 않았다. 대시보드 안내상 2026-12-16 재개 예정이며, 이전 기록 및 업로드 파일은 아직 이전되지 않았다. 새 DB가 빈 상태라고 원본 데이터가 삭제됐다고 판단하면 안 된다.
+
+2026-11-19 Vercel API로 재확인한 상태는 `limits-exceeded-suspended`이며 `usageQuotaExceeded: true`다. 현재 Neon 하트 API는 저장·별도 재조회·취소를 확인했다. 12월 16일은 이전 대시보드의 재개 예정일이며 복구 완료일이 아니다. 하트 초기 조회 실패 시 화면의 Retry로 즉시 다시 불러올 수 있고, 네트워크 재연결 시에도 조회한다.
 
 재개 후 서버용 Blob·Neon 환경변수가 설정된 비공개 작업 디렉터리에서 `node scripts/migrate-legacy-storage.mjs`를 실행한다. 이 스크립트는 모든 원본을 `.private/legacy-backup/`에 보관하고 새 DB에 없는 문서만 삽입한다. 같은 경로에 새 기록이 있으면 덮어쓰지 않고 충돌 건수를 보고한다. 충돌 하트·노트·사례는 새 수정 내역과 원본을 비교해 수동으로 병합한다. 백업은 GitHub에 올리지 않는다. 복구 검증이 끝나면 `Archive.jsx`의 임시 이전 안내를 제거한다.
 
