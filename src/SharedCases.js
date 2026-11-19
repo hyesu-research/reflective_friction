@@ -10,7 +10,7 @@ export async function uploadCaseMedia(item){
 export default function useSharedCases({setItems,localItems,seedIds}){
  const [ready,setReady]=useState(false),[error,setError]=useState('');
  const records=useRef({}),local=useRef(localItems),seeds=useRef(new Set(seedIds)),generation=useRef(0),writes=useRef(new Set()),signature=useRef('');
- const apply=useCallback(next=>{records.current={...records.current,...next};setItems(xs=>{const found=new Set(xs.map(x=>x.id));return [...xs.map(x=>next[x.id]?{...x,...next[x.id].item}:x),...Object.values(next).filter(r=>!found.has(r.item.id)).map(r=>r.item)]})},[setItems]);
+ const apply=useCallback(next=>{records.current={...records.current,...next};setItems(xs=>{const found=new Set(xs.map(x=>x.id));return [...xs.map(x=>next[x.id]?{...x,...next[x.id].item,_addedAt:next[x.id].createdAt||next[x.id].updatedAt}:x),...Object.values(next).filter(r=>!found.has(r.item.id)).map(r=>({...r.item,_addedAt:r.createdAt||r.updatedAt}))]})},[setItems]);
  const saveCase=useCallback(async(item,revision)=>{
   if(writes.current.has(item.id))throw Error('이 사례를 저장 중입니다. 잠시 기다려주세요.');
   writes.current.add(item.id);generation.current++;
