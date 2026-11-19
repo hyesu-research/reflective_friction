@@ -1,6 +1,6 @@
 import {isSyncActive} from './sync-activity';
 import React,{useState,useEffect,useRef,useCallback} from 'react';
-import ResearcherName from './ResearcherName';
+import ResearcherName,{RESEARCHER_COLORS} from './ResearcherName';
 const FIELDS=[['professorNote','윤재영'],['note','김혜수'],['youngchanNote','박영찬'],['jungwooNote','배정우']];
 const draftKey=(id,field)=>`reflective-note-draft:${id}:${field}`;
 function readDraft(id,field){try{return JSON.parse(sessionStorage.getItem(draftKey(id,field)))}catch{return null}}
@@ -44,5 +44,5 @@ export default function SharedNotes({item,onSaveNote}){
  const generation=useRef(0);
  const saved=useCallback((field,record)=>{generation.current++;setNotes(n=>({...n,[field]:record}));onSaveNote?.({[field]:record?.text||''})},[onSaveNote]);
  useEffect(()=>{let stopped=false,busy=false;async function load(){if(busy||document.hidden||!isSyncActive())return;busy=true;const version=generation.current;try{const r=await fetch(`/api/notes?caseId=${encodeURIComponent(item.id)}`,{cache:'no-store'});const data=await r.json();if(!r.ok)throw Error(data.error);if(!stopped&&version===generation.current){setNotes(data.notes);setReady(true);setLoadError('')}}catch(error){if(!stopped)setLoadError(error.message||'노트를 불러오지 못했습니다. 다시 연결합니다.')}finally{busy=false}}load();const timer=setInterval(load,60000);window.addEventListener('focus',load);document.addEventListener('visibilitychange',load);return()=>{stopped=true;clearInterval(timer);window.removeEventListener('focus',load);document.removeEventListener('visibilitychange',load)}},[item.id]);
- return <div className="shared-notes">{ready&&loadError&&<p role="status">{loadError}</p>}{FIELDS.map(([field,name])=><NoteField key={field} id={item.id} field={field} name={name} seed={item[field]} color={field==='note'?item.noteColor:undefined} record={notes[field]} ready={ready} loadError={loadError} onSaved={saved}/>)}</div>
+ return <div className="shared-notes">{ready&&loadError&&<p role="status">{loadError}</p>}{FIELDS.map(([field,name])=><NoteField key={field} id={item.id} field={field} name={name} seed={item[field]} color={RESEARCHER_COLORS[name]} record={notes[field]} ready={ready} loadError={loadError} onSaved={saved}/>)}</div>
 }
